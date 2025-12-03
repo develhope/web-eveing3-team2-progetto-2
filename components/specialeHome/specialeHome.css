@@ -1,4 +1,4 @@
-div {
+.contenitore {
   background-color: black;
   display: flex;
 }
@@ -18,25 +18,26 @@ div {
   gap: 5px;
 }
 
-h1,
-h3,
-button {
+.specialeBestseller,
+.giacche,
+.compraOra {
   color: white;
   font-family: roboto_slabregular, Georgia, Times, Arial, Helvetica, sans-serif;
   margin: 0;
+  padding-top: 10px;
 }
 
-h1 {
+.specialeBestseller {
   width: 500px;
   font-size: 40px;
   font-weight: 300;
 }
-h3 {
+.giacche {
   width: 400px;
   font-weight: 60;
 }
 
-button {
+.compraOra {
   background-color: black;
   width: 150px;
   padding-left: 20px;
@@ -47,7 +48,7 @@ button {
 }
 
 @media screen and (max-width: 1200px) {
-  div {
+  .contenitore {
     flex-direction: column;
     align-items: start; /* facoltativo: centra tutto */
   }
