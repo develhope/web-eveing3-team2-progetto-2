@@ -1,0 +1,64 @@
+.contenitore {
+  background-color: black;
+  display: flex;
+}
+
+.img-top100 {
+  padding-left: 50px;
+  width: 700px;
+  height: 300px;
+}
+
+.scritteBottone {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-top: 100px;
+  gap: 5px;
+}
+
+.specialeBestseller,
+.giacche,
+.compraOra {
+  color: white;
+  font-family: roboto_slabregular, Georgia, Times, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.specialeBestseller {
+  width: 500px;
+  font-size: 40px;
+  font-weight: 300;
+}
+.giacche {
+  width: 400px;
+  font-weight: 60;
+}
+
+.compraOra {
+  background-color: black;
+  width: 150px;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+@media screen and (max-width: 1200px) {
+  .contenitore {
+    flex-direction: column;
+    align-items: start; /* facoltativo: centra tutto */
+  }
+  .img-top100 {
+    padding-left: 50px;
+    width: 500px;
+    height: 200px;
+  }
+  .scritteBottone {
+    padding-top: 20px; /* puoi aggiustarlo se vuoi */
+    padding-left: 40px; /* rimuovi lo spostamento laterale */
+  }
+}
