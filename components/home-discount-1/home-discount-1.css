@@ -1,18 +1,6 @@
-/* container principale home sconto */
-@media (max-width: 769px) {
-  .home-discount-container {
-    flex-direction: column;
-  }
-  .immagine-metal {
-    width: 100%;
-  }
-  .discount-box {
-    left: 10%;
-  }
-}
-
 .home-discount-container {
   display: flex;
+  flex-direction: row;
   position: relative;
   width: 100%;
   margin-bottom: 80px;
@@ -38,8 +26,8 @@
   /* posizionamento */
   position: absolute;
   top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 400px;
+  /* transform: translateX(50%); */
   z-index: 10;
 }
 
@@ -105,9 +93,24 @@
 }
 
 .icona-sconto {
-  background-image: url("icona-sconto.png");
+  content: url("icona-sconto.png");
+}
+.icona-sconto:hover {
+  content: url("icona-sconto-hover.png");
 }
 
 .flex {
   display: flex;
+}
+/* container principale home sconto */
+@media (max-width: 769px) {
+  .home-discount-container {
+    flex-direction: column;
+  }
+  .immagine-metal {
+    width: 100%;
+  }
+  .discount-box {
+    left: 10px;
+  }
 }
