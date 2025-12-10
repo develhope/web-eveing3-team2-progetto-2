@@ -7,6 +7,8 @@
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
     - The "symbol *" part is to solve Firefox SVG sprite bug
  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap");
+
 *:where(
     :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
   ) {
@@ -105,15 +107,34 @@ meter {
 }
 
 :root {
-  --primary-color: #fb6100;
-  --primary-color--hover: #d65403;
+  --font-paragrafo: "Open Sans", sans-serif;
+  --font-titolo: "Roboto Slab", serif;
+
+  --brand-primary: #9b1d2c;
+  --brand-secondary: #b40019;
+  --brand-accent: #006d1c;
+  --black: #000000;
+  --gray-900: #333333;
+  --gray-800: #666666;
+  --gray-700: #999999;
+  --gray-600: #cccccc;
+  --gray-100: #eaeaea;
+  --white: #ffffff;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
-
-html,
 body {
-  font-family: "Lato", sans-serif;
+  font-family: var(--font-paragrafo);
+  background: var(--white);
+  color: var(--black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-titolo);
 }
 
 button:hover,
