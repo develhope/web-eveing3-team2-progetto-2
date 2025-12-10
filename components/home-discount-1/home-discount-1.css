@@ -1,0 +1,113 @@
+/* container principale home sconto */
+@media (max-width: 769px) {
+  .home-discount-container {
+    flex-direction: column;
+  }
+  .immagine-metal {
+    width: 100%;
+  }
+  .discount-box {
+    left: 10%;
+  }
+}
+
+.home-discount-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.immagine-metal {
+  width: 70%;
+  height: auto;
+  object-fit: fill;
+  display: block;
+}
+
+.discount-box {
+  background-color: #b40019;
+  width: 160px;
+  height: 60px;
+  font-size: 50px;
+  color: white;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* posizionamento */
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.border-plus {
+  border: 2px solid #b40019;
+  width: 160px;
+  height: 60px;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+  z-index: -1;
+}
+
+.container-laterale {
+  max-width: 700px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 30px 30px 50px;
+  background-color: black;
+  color: white;
+  z-index: 0;
+  box-sizing: border-box;
+}
+
+.testo-sconto {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.button-not-lose {
+  padding: 10px;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.button-not-lose:hover {
+  border-bottom: black 1px solid;
+}
+
+.promo-e-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button-promo {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.button-promo:hover {
+  background-color: white;
+  color: black;
+}
+
+.image-info {
+  cursor: pointer;
+}
+
+.icona-sconto {
+  background-image: url("icona-sconto.png");
+}
+
+.flex {
+  display: flex;
+}
