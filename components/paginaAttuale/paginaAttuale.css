@@ -1,0 +1,143 @@
+.paginaAttuale {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*allinea scritte a sc e bottoni a dx*/
+}
+
+.numeroPagina {
+  white-space: nowrap;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.bottone1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #eaeaea;
+  text-decoration: none;
+  color: black;
+}
+
+.bottone1:hover {
+  background-color: black;
+  color: white;
+}
+
+.bottone2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #eaeaea;
+  text-decoration: none;
+  color: black;
+}
+
+.bottone2:hover {
+  background-color: black;
+  color: white;
+}
+.bottone3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #eaeaea;
+  text-decoration: none;
+  color: black;
+}
+
+.bottone3:hover {
+  background-color: black;
+  color: white;
+}
+
+.puntiniDiSospensione {
+  padding-top: 4px;
+}
+
+.bottone5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #eaeaea;
+  text-decoration: none;
+  color: black;
+}
+
+.bottone5:hover {
+  background-color: black;
+  color: white;
+}
+
+.prossimaPagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+  background-color: #eaeaea;
+  text-decoration: none;
+  color: black;
+}
+.spanMediaQuery {
+  display: none;
+}
+
+.prossimaPagina:hover {
+  background-color: black;
+  color: white;
+}
+
+/*
+.arrow-right {
+  width: 20px;
+  height: 30px;
+}
+.arrow-right:hover {
+  background-color: black;
+  color: white;
+}
+  */
+
+@media screen and (max-width: 763px) {
+  .spanProssimaPagina {
+    display: none;
+  }
+  .spanMediaQuery {
+    display: flex;
+  }
+  .prossimaPagina {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .paginaAttuale {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+    gap: 8px;
+  }
+
+  .buttonsContainer {
+    grid-row: 1;
+  }
+
+  .numeroPagina {
+    grid-row: 2;
+  }
+}
