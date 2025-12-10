@@ -1,0 +1,95 @@
+.footerPrincipale {
+  background-color: #ffffff;
+  padding: 40px 80px 60px;
+
+  color: #000;
+}
+
+.footerStruttura {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.footerColonna {
+  flex: 1;
+}
+
+.footerBlocco + .footerBlocco {
+  margin-top: 60px;
+}
+
+.footerTitolo {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.footerTesto {
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+
+.rigaPagamenti {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.iconaPagamento {
+  height: 45px;
+  object-fit: contain;
+}
+
+.pagamentoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  gap: 6px;
+}
+
+.wrapperStore {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.badgeStore {
+  height: 60px;
+  object-fit: contain;
+}
+
+.logoSpedizione {
+  height: 55px;
+  object-fit: contain;
+}
+
+.logoPartner {
+  height: 80px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footerPrincipale {
+    padding: 32px 20px 40px;
+  }
+
+  .footerStruttura {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footerTitolo {
+    font-size: 22px;
+  }
+
+  .footerTesto {
+    font-size: 16px;
+  }
+}

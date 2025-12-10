@@ -1,0 +1,635 @@
+.altriShop {
+  font-family: roboto_slabregular, Georgia, Times, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  padding-left: 80px;
+}
+
+/* x le scritte */
+.shops a {
+  color: black;
+  text-decoration: none; /* toglie la sottolineatura */
+  display: flex; /*  icona + testo nella stessa riga */
+  align-items: center; /* centra verticalmente */
+  gap: 8px;
+}
+
+.shops a:hover {
+  text-decoration: underline;
+  cursor: url(metalhand.png), pointer;
+}
+
+.shops {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 30px;
+  padding-left: 80px;
+}
+
+/*international*/
+.international {
+  display: grid;
+  grid-column: 1;
+  gap: 8px;
+}
+.international-flag {
+  width: 18px;
+}
+
+/*france*/
+.france {
+  display: grid;
+  grid-column: 2;
+  gap: 8px;
+}
+.france-flag {
+  width: 18px;
+}
+
+/*deutschland*/
+.deutschland {
+  display: grid;
+  grid-column: 3;
+  gap: 8px;
+}
+.deutschland-flag {
+  width: 18px;
+}
+
+/*italy*/
+.italy {
+  display: grid;
+  grid-column: 4;
+  gap: 8px;
+}
+.italy-flag {
+  width: 18px;
+}
+
+/*polska*/
+.polska {
+  display: grid;
+  grid-column: 1;
+  gap: 8px;
+  padding-top: 30px;
+}
+.polska-flag {
+  width: 18px;
+}
+
+/*Česká Republika*/
+.ČeskáRepublika {
+  display: grid;
+  grid-column: 2;
+  gap: 8px;
+  padding-top: 30px;
+}
+.ČeskáRepublika-flag {
+  width: 18px;
+}
+
+/*norge*/
+.norge {
+  display: grid;
+  grid-column: 3;
+  gap: 8px;
+  padding-top: 30px;
+}
+.norge-flag {
+  width: 18px;
+}
+
+/*schweiz*/
+.schweiz {
+  display: grid;
+  grid-column: 4;
+  gap: 8px;
+  padding-top: 30px;
+}
+.schweiz-flag {
+  width: 18px;
+}
+
+/*Suomi*/
+.suomi {
+  display: grid;
+  grid-column: 1;
+  gap: 8px;
+  padding-top: 30px;
+}
+.suomi-flag {
+  width: 18px;
+}
+
+/*ireland*/
+.ireland {
+  display: grid;
+  grid-column: 2;
+  gap: 8px;
+  padding-top: 30px;
+}
+.ireland-flag {
+  width: 18px;
+}
+
+/*United Kingdom*/
+.unitedKingdom {
+  display: grid;
+  grid-column: 3;
+  gap: 8px;
+  padding-top: 30px;
+}
+.unitedKingdom-flag {
+  width: 18px;
+}
+
+/*sverige*/
+.sverige {
+  display: grid;
+  grid-column: 4;
+  gap: 8px;
+  padding-top: 30px;
+}
+.sverige-flag {
+  width: 18px;
+}
+
+/*Danmark*/
+.danmark {
+  display: grid;
+  grid-column: 1;
+  gap: 8px;
+  padding-top: 30px;
+}
+.danmark-flag {
+  width: 18px;
+}
+
+/*Nederland*/
+.nederland {
+  display: grid;
+  grid-column: 2;
+  gap: 8px;
+  padding-top: 30px;
+}
+.nederland-flag {
+  width: 18px;
+}
+
+/*Österreich*/
+.osterreich {
+  display: grid;
+  grid-column: 3;
+  gap: 8px;
+  padding-top: 30px;
+}
+.osterreich-flag {
+  width: 18px;
+}
+
+/*Slovensko*/
+.slovensko {
+  display: grid;
+  grid-column: 4;
+  gap: 8px;
+  padding-top: 30px;
+}
+.slovensko-flag {
+  width: 18px;
+}
+
+/*Belgique*/
+.belgique {
+  display: grid;
+  grid-column: 1;
+  gap: 8px;
+  padding-top: 30px;
+}
+.belgique-flag {
+  width: 18px;
+}
+
+/*Spain*/
+.spain {
+  display: grid;
+  grid-column: 2;
+  gap: 8px;
+  padding-top: 30px;
+}
+.spain-flag {
+  width: 18px;
+}
+
+@media screen and (max-width: 1400px) {
+  .shops {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
+    padding-left: 80px;
+  }
+
+  /*international*/
+  .international {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .international-flag {
+    width: 18px;
+  }
+
+  /*france*/
+  .france {
+    display: grid;
+    grid-column: 2;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .france-flag {
+    width: 18px;
+  }
+
+  /*deutschland*/
+  .deutschland {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .deutschland-flag {
+    width: 18px;
+  }
+
+  /*italy*/
+  .italy {
+    display: grid;
+    grid-column: 2;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .italy-flag {
+    width: 18px;
+  }
+
+  /*polska*/
+  .polska {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .polska-flag {
+    width: 18px;
+  }
+
+  /*Česká Republika*/
+  .ČeskáRepublika {
+    display: grid;
+    grid-column: 2;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .ČeskáRepublika-flag {
+    width: 18px;
+  }
+
+  /*norge*/
+  .norge {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .norge-flag {
+    width: 18px;
+  }
+
+  /*schweiz*/
+  .schweiz {
+    display: grid;
+    grid-column: 2;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .schweiz-flag {
+    width: 18px;
+  }
+
+  /*Suomi*/
+  .suomi {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .suomi-flag {
+    width: 18px;
+  }
+
+  /*ireland*/
+  .ireland {
+    display: grid;
+    grid-column: 2;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .ireland-flag {
+    width: 18px;
+  }
+
+  /*United Kingdom*/
+  .unitedKingdom {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .unitedKingdom-flag {
+    width: 18px;
+  }
+
+  /*sverige*/
+  .sverige {
+    display: grid;
+    grid-column: 2;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .sverige-flag {
+    width: 18px;
+  }
+
+  /*Danmark*/
+  .danmark {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .danmark-flag {
+    width: 18px;
+  }
+
+  /*Nederland*/
+  .nederland {
+    display: grid;
+    grid-column: 2;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .nederland-flag {
+    width: 18px;
+  }
+
+  /*Österreich*/
+  .osterreich {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .osterreich-flag {
+    width: 18px;
+  }
+
+  /*Slovensko*/
+  .slovensko {
+    display: grid;
+    grid-column: 2;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .slovensko-flag {
+    width: 18px;
+  }
+
+  /*Belgique*/
+  .belgique {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .belgique-flag {
+    width: 18px;
+  }
+
+  /*Spain*/
+  .spain {
+    display: grid;
+    grid-column: 2;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .spain-flag {
+    width: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shops {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    padding-left: 80px;
+  }
+
+  /*international*/
+  .international {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .international-flag {
+    width: 18px;
+  }
+
+  /*france*/
+  .france {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .france-flag {
+    width: 18px;
+  }
+
+  /*deutschland*/
+  .deutschland {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .deutschland-flag {
+    width: 18px;
+  }
+
+  /*italy*/
+  .italy {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .italy-flag {
+    width: 18px;
+  }
+
+  /*polska*/
+  .polska {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .polska-flag {
+    width: 18px;
+  }
+
+  /*Česká Republika*/
+  .ČeskáRepublika {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .ČeskáRepublika-flag {
+    width: 18px;
+  }
+
+  /*norge*/
+  .norge {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .norge-flag {
+    width: 18px;
+  }
+
+  /*schweiz*/
+  .schweiz {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .schweiz-flag {
+    width: 18px;
+  }
+
+  /*Suomi*/
+  .suomi {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .suomi-flag {
+    width: 18px;
+  }
+
+  /*ireland*/
+  .ireland {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .ireland-flag {
+    width: 18px;
+  }
+
+  /*United Kingdom*/
+  .unitedKingdom {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .unitedKingdom-flag {
+    width: 18px;
+  }
+
+  /*sverige*/
+  .sverige {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .sverige-flag {
+    width: 18px;
+  }
+
+  /*Danmark*/
+  .danmark {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .danmark-flag {
+    width: 18px;
+  }
+
+  /*Nederland*/
+  .nederland {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .nederland-flag {
+    width: 18px;
+  }
+
+  /*Österreich*/
+  .osterreich {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .osterreich-flag {
+    width: 18px;
+  }
+
+  /*Slovensko*/
+  .slovensko {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .slovensko-flag {
+    width: 18px;
+  }
+
+  /*Belgique*/
+  .belgique {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .belgique-flag {
+    width: 18px;
+  }
+
+  /*Spain*/
+  .spain {
+    display: grid;
+    grid-column: 1;
+    gap: 8px;
+    padding-top: 30px;
+  }
+  .spain-flag {
+    width: 18px;
+  }
+}

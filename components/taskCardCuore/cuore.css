@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+.heart-card-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.heart-card-title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.heart-title {
+  color: white;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.heart-card-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.heart-card-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.heart-card-grid::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.heart-card-grid::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.heart-card-grid::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+.heart-card {
+  flex: 0 0 320px;
+  min-width: 320px;
+  background-color: #000;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.heart-card:hover {
+  transform: translateY(-5px);
+}
+
+.heart-card-image {
+  width: 100%;
+  aspect-ratio: 16 / 16;
+  max-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.heart-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heart-content {
+  padding: 25px;
+  text-align: center;
+}
+
+.heart-button {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.heart-button:hover {
+  opacity: 0.8;
+}
+
+/* Media query per tablet e mobile */
+@media (max-width: 768px) {
+  .heart-card {
+    flex: 0 0 clamp(200px, 40vw, 250px);
+    min-width: clamp(200px, 40vw, 250px);
+  }
+
+  .heart-card-image {
+    max-height: clamp(200px, 40vw, 250px);
+  }
+
+  .heart-content {
+    padding: 20px 15px;
+  }
+
+  .heart-button {
+    font-size: clamp(14px, 4vw, 16px);
+  }
+}
+
+/* Media query per mobile piccolo */
+@media (max-width: 480px) {
+  .heart-card {
+    flex: 0 0 clamp(160px, 45vw, 200px);
+    min-width: clamp(160px, 45vw, 200px);
+  }
+
+  .heart-card-image {
+    max-height: clamp(160px, 45vw, 200px);
+  }
+
+  .heart-content {
+    padding: 15px 10px;
+  }
+
+  .heart-button {
+    font-size: clamp(12px, 3.5vw, 14px);
+  }
+}
