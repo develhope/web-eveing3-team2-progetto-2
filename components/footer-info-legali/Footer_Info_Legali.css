@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
 }
 
 .title-info {
@@ -11,7 +10,6 @@
   padding: 0px 10px 0px 10px;
   margin-bottom: 10px;
   font-size: 23px;
-  font-family: roboto_slabregular, Georgia, Times, Arial, Helvetica, sans-serif;
 }
 
 .list-info-legal {
@@ -59,8 +57,8 @@
   cursor: pointer;
 }
 
-.all-component-info-legal {
-  font-size: 13px;
+.title-info {
+  font-size: 23px;
   font-family: "Roboto Slab", Georgia, Times, Arial, Helvetica, sans-serif;
 }
 
