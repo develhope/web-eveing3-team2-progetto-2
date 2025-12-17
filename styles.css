@@ -1,0 +1,86 @@
+/* Stili Generali e Reset (Opzionali ma Utili) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Usiamo un font generico per la demo */
+  background-color: #222; /* Sfondo del corpo, sebbene la barra sia nera */
+}
+
+/* Stile del Contenitore Principale (La Barra Nera) */
+.barra-offerte {
+  display: flex; /* Attiva Flexbox per disporre gli elementi in riga */
+  justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+  align-items: center; /* Allinea gli elementi verticalmente al centro */
+
+  background-color: #000; /* Sfondo nero come nell'immagine */
+  color: #fff; /* Testo bianco */
+  padding: 30px 40px; /* Spazio interno sopra, sotto e ai lati */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linea sottile opzionale in alto */
+
+  /* Nota: ho rimosso il border-right verticale che si vede nell'immagine
+       e l'ho applicato agli elementi interni per coerenza con il layout flex. */
+}
+
+/* Stile per Ciascun Blocco di Offerta */
+.offerta-item {
+  display: flex; /* Attiva Flexbox anche all'interno di ogni blocco */
+  flex: 1; /* Permette a ciascun blocco di occupare una parte uguale dello spazio */
+  padding: 0 30px; /* Spazio interno laterale */
+  box-sizing: border-box; /* Assicura che il padding non aumenti la larghezza */
+
+  /* Aggiungiamo la linea verticale di separazione a destra, tranne per l'ultimo elemento */
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Rimuovi la linea verticale per l'ultimo elemento */
+.offerta-item:last-child {
+  border-right: none;
+}
+
+/* Stile dell'Icona */
+.icona {
+  font-size: 28px; /* Dimensione dell'icona */
+  margin-right: 15px; /* Spazio tra icona e testo */
+  /* Allineamento verticale dell'icona con il testo, centrando il contenitore esterno */
+  align-self: flex-start;
+}
+
+/* Stile del Contenuto Testuale */
+.contenuto {
+  display: flex;
+  flex-direction: column; /* Impila il testo verticalmente */
+}
+
+/* Stile del Titolo */
+.titolo {
+  font-size: 16px;
+  font-weight: bold; /* Titolo in grassetto */
+  line-height: 1.4; /* Altezza della linea per una migliore leggibilità */
+  margin-top: 0; /* Rimuove il margine superiore predefinito del paragrafo */
+  margin-bottom: 5px; /* Spazio sotto il titolo */
+}
+
+/* Stile della Descrizione */
+.descrizione {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0.8; /* Rende il testo leggermente più sbiadito */
+}
+
+/* Stile del Link di Azione (Iscriviti, Scarica) */
+.azione {
+  font-size: 14px;
+  color: #fff; /* Link di testo bianco */
+  text-decoration: underline; /* Sottolineato */
+  margin-top: 5px; /* Spazio sopra il link */
+  width: fit-content; /* Il link occupa solo lo spazio necessario per il testo */
+}
+
+.azione:hover {
+  color: #ccc; /* Cambia colore al passaggio del mouse per feedback visivo */
+}
+
+/* Regolazione per i blocchi che hanno un link, per allineare tutto correttamente */
+.offerta-item.con-link .contenuto {
+  justify-content: space-between;
+}

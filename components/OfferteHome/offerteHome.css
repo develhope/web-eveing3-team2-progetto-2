@@ -1,0 +1,87 @@
+.offerte-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: black;
+  padding: 30px 10px 30px 10px;
+}
+
+.simbolo {
+  align-self: flex-start;
+  width: 30px;
+  height: 30px;
+}
+
+.contenuto {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.reso {
+  border-right: 1px solid gray;
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.titolo {
+  margin: 0 15px 0 20px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.descrizione {
+  margin: 2px 15px 2px 20px;
+  font-size: 14px;
+}
+
+.spedizione {
+  border-right: 1px solid grey;
+  display: flex;
+  flex: 1;
+}
+
+.sconto {
+  border-right: 1px solid grey;
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.link {
+  padding-left: 20px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .offerte-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reso {
+    border-right: none;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+  }
+
+  .spedizione {
+    border-right: none;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+  }
+
+  .sconto {
+    border-right: none;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+  }
+}
