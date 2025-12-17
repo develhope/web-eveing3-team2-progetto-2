@@ -1,0 +1,308 @@
+/*1 riga*/
+.categorie-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.icona-casa {
+  cursor: url(metalhand.png), pointer;
+  width: 35px;
+  height: 25px;
+}
+
+.barraRossa {
+  width: 7px;
+  height: 12px;
+}
+
+.novita {
+  color: rgb(37, 35, 35);
+  font-size: 15px;
+}
+
+.novita:hover {
+  text-decoration: none;
+}
+.abbigliamento {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+/*2 riga*/
+.categorie-bottoni {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.vestiti {
+  background-color: white;
+  border: 1px solid black;
+  width: 130px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.vestiti:hover {
+  background-color: black;
+  color: white;
+}
+
+.TshirtTop {
+  background-color: white;
+  border: 1px solid black;
+  width: 160px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.TshirtTop:hover {
+  background-color: black;
+  color: white;
+}
+
+.camicie {
+  background-color: white;
+  border: 1px solid black;
+  width: 120px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.camicie:hover {
+  background-color: black;
+  color: white;
+}
+
+.camicieDaDonna {
+  background-color: white;
+  border: 1px solid black;
+  width: 170px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.camicieDaDonna:hover {
+  background-color: black;
+  color: white;
+}
+
+.felpe {
+  background-color: white;
+  border: 1px solid black;
+  width: 110px;
+  height: 35px;
+  border-radius: 2px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.felpe:hover {
+  background-color: black;
+  color: white;
+}
+
+.giacche {
+  background-color: white;
+  border: 1px solid black;
+  width: 110px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.giacche:hover {
+  background-color: black;
+  color: white;
+}
+
+.cappotti {
+  background-color: white;
+  border: 1px solid black;
+  width: 130px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cappotti:hover {
+  background-color: black;
+  color: white;
+}
+
+.maglie {
+  background-color: white;
+  border: 1px solid black;
+  width: 250px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.maglie:hover {
+  background-color: black;
+  color: white;
+}
+
+.pantaloni {
+  background-color: white;
+  border: 1px solid black;
+  width: 250px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pantaloni:hover {
+  background-color: black;
+  color: white;
+}
+
+.corsetti {
+  background-color: white;
+  border: 1px solid black;
+  width: 110px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.corsetti:hover {
+  background-color: black;
+  color: white;
+}
+
+.gonne {
+  background-color: white;
+  border: 1px solid black;
+  width: 100px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.gonne:hover {
+  background-color: black;
+  color: white;
+}
+
+.intimo {
+  background-color: white;
+  border: 1px solid black;
+  width: 90px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.intimo:hover {
+  background-color: black;
+  color: white;
+}
+
+.calzeEcalzini {
+  background-color: white;
+  border: 1px solid black;
+  width: 180px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.calzeEcalzini:hover {
+  background-color: black;
+  color: white;
+}
+
+.abbigliamentoNotte {
+  background-color: white;
+  border: 1px solid black;
+  width: 200px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.abbigliamentoNotte:hover {
+  background-color: black;
+  color: white;
+}
+
+.abbigliamentoNeonati {
+  background-color: white;
+  border: 1px solid black;
+  width: 400px;
+  height: 35px;
+  border-radius: 2px;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.abbigliamentoNeonati:hover {
+  background-color: black;
+  color: white;
+}

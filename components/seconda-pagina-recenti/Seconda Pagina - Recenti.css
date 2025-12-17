@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.list-catalog {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding: 20px 30px 0px 30px;
+}
+
+.list-catalog li {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+}
+
+.list-catalog img {
+  display: block;
+}
+
+.list-catalog span {
+  margin-top: 8px;
+}
+
+.sconto {
+  color: red;
+  font-weight: bold;
+}
+
+.prezzo {
+  font-size: 14px;
+}
+
+.text-sale {
+  color: rgb(189, 8, 8);
+}
+
+.percent-sale {
+  border: 1px solid rgb(189, 16, 16);
+  background-color: rgb(189, 16, 16);
+  color: white;
+  width: auto;
+}
+
+.list-catalog span {
+  font-weight: bold;
+}
+
+.title-recenti {
+  font-size: 23px;
+  font-family: "Roboto Slab", Georgia, Times, Arial, Helvetica, sans-serif;
+}
+@media (max-width: 769px) {
+  .list-catalog li {
+    border: 1px solid black;
+    padding: 10px 5px;
+    width: 223px;
+    flex-shrink: 0;
+  }
+  .list-catalog {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .list-catalog img {
+    height: 150px;
+  }
+}
