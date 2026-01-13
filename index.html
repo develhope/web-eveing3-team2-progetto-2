@@ -5,54 +5,554 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/css/style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="./assets/css/home.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="https://images-ext-1.discordapp.net/external/lgDoIsteo6MruUEzyvnTAgK3h67qFVMLl5Rxlz9zumQ/%3Fsw%3D300%26sh%3D300%26sm%3Dfit%26sfrm%3Dpng/https/www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Library-Sites-EMPSharedLibrary/default/dw6454f6a5/logos/white/emp_stage_collection.png?format=webp&quality=lossless&width=375&height=375"
+      type="image/x-icon"
+    />
 
-    <title>Example with all conventions</title>
+    <title>EMP Home</title>
   </head>
   <body>
-    <div class="hero">
-      <div class="hero__container">
-        <h1 class="hero__title">A very strong headline!</h1>
-        <p class="hero__description">Are you ready for that?</p>
-        <button class="someblock__button--primary">Yes i'm ready</button>
-      </div>
-    </div>
-    <div class="container">
-      <div class="hero__cards">
-        <div class="homepage-card">
-          <img
-            class="homepage-card__image"
-            src="components/homepage-card/spesa.jpeg"
-            alt="Random image"
-          />
-          <h1 class="homepage-card__title">Spesa</h1>
+    <header>
+      <!-- Navbar -->
+    </header>
+    <main>
+      <!-- home discount container -->
+      <div class="home-discount-container">
+        <img
+          class="immagine-metal"
+          src="metal-sconto.webp"
+          alt="metal discount xmas"
+        />
+        <div class="discount-box">
+          -17%*
+          <span class="border-plus"></span>
         </div>
-        <div class="homepage-card">
-          <img
-            class="homepage-card__image"
-            src="components/homepage-card/spesa.jpeg"
-            alt="Random image"
-          />
-          <h1 class="homepage-card__title">Spesa</h1>
-        </div>
-        <div class="homepage-card">
-          <img
-            class="homepage-card__image"
-            src="components/homepage-card/spesa.jpeg"
-            alt="Random image"
-          />
-          <h1 class="homepage-card__title">Spesa</h1>
-        </div>
-        <div class="homepage-card">
-          <img
-            class="homepage-card__image"
-            src="components/homepage-card/spesa.jpeg"
-            alt="Random image"
-          />
-          <h1 class="homepage-card__title">Spesa</h1>
+        <div class="container-laterale">
+          <h2 class="testo-sconto">
+            Per i tuoi regali sotto l'albero lo sconto è del 17%!
+          </h2>
+          <button class="button-not-lose" title="messaggio incoraggiante">
+            Da non perdere!
+          </button>
+          <div class="promo-e-info">
+            <button class="button-promo" title="codice promo">
+              <span class="icona-sconto"></span>
+              Codice promo: XMAS17
+            </button>
+            <img
+              class="image-info"
+              src="icona-info.png"
+              alt="icona-informazioni"
+            />
+          </div>
         </div>
       </div>
-    </div>
+
+      <!-- home discount container -->
+      <div class="home-discount-container">
+        <img
+          class="immagine-metal"
+          src="metal-sconto-2.webp"
+          alt="metal discount xmas"
+        />
+        <div class="discount-box">
+          -70%*
+          <span class="border-plus"></span>
+        </div>
+        <div class="container-laterale">
+          <h2 class="testo-grande">Divertimento e stile su EMP!</h2>
+          <p class="testo-sconto2">
+            Migliaia di nuovi meravigliosi design: giacche, felpe, magliette,
+            stivali e molto altro. scopri tutto!
+          </p>
+
+          <button class="button-not-lose" title="messaggio incoraggiante">
+            Da non perdere!
+          </button>
+          <div class="promo-e-info flex">
+            <img
+              class="image-info"
+              src="icona-info.png"
+              alt="icona-informazioni"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- offerte home -->
+      <div class="offerte-container">
+        <div class="reso">
+          <img
+            class="simbolo"
+            src="/components/OfferteHome/img/Pacchetto.png"
+          />
+          <div class="contenuto">
+            <h3 class="titolo">
+              Non preoccuparti, il periodo di reso è esteso fino al 31.01.2026.
+            </h3>
+            <p class="descrizione">Shopping natalizio senza stress!</p>
+          </div>
+        </div>
+        <div class="spedizione">
+          <img class="simbolo" src="/components/OfferteHome/img/Club.png" />
+          <div class="contenuto">
+            <h3 class="titolo">Spedizione Gratis</h3>
+            <p class="descrizione">Solo per i Membri Backstage Club.</p>
+            <a class="link" href="#">Iscriviti ora</a>
+          </div>
+        </div>
+        <div class="sconto">
+          <img
+            class="simbolo"
+            src="/components/OfferteHome/img/Messaggio.png"
+          />
+          <div class="contenuto">
+            <h3 class="titolo">
+              15% di sconto? Basta iscriverti alla Newsletter!
+            </h3>
+            <p class="descrizione">Novità. Offerte. Esclusive.</p>
+            <a class="link" href="#">Iscriviti subito</a>
+          </div>
+        </div>
+        <div class="app">
+          <img class="simbolo" src="/components/OfferteHome/img/Simbolo.png" />
+
+          <div class="contenuto">
+            <h3 class="titolo">Scarica ora l'App EMP!</h3>
+            <p class="descrizione">Porta il nostro catalogo sempre</p>
+            <a class="link" href="#">Scarica qui!</a>
+          </div>
+        </div>
+      </div>
+      <!-- speciale home  -->
+      <div class="contenitore">
+        <img
+          src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Library-Sites-EMPSharedLibrary/default/dwd6545846/TOP100_750x300_SAM-7362_Black_Week_2025_Grafiken_v2.jpg?sw=768"
+          class="img-top100"
+        />
+        <div class="scritteBottone">
+          <h1 class="specialeBestseller">Speciale Bestseller</h1>
+          <h3 class="giacche">
+            Pelle, tessuto e carattere: le 100 giacche più cool a prezzi
+            imperdibili!
+          </h3>
+          <button class="compraOra">Compra ora!</button>
+        </div>
+      </div>
+
+      <!-- 6x container discount -->
+      <h4 class="title-product-discount">
+        Esplora i prodotti scontati solo su EMP
+      </h4>
+      <div class="container-discount-6x">
+        <button class="btn-arrow-sx" type="button" title="arrow-sx">❮</button>
+        <div class="card-discount-element">
+          <img
+            src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwbce2676e/images/3/3/2/6/332644a-emp.jpg?sw=200&sh=200&sm=fit&sfrm=png"
+            alt="cappotto scontato 26% "
+          />
+          <div class="sconto-applicato">-33%</div>
+          <div class="prize-text">
+            RRP Da <span class="old-prize">109.99€</span> a
+            <span class="new-prize">80.99€</span>
+          </div>
+        </div>
+        <div class="card-discount-element">
+          <img
+            src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw2fa02748/images/4/6/6/9/466955a.jpg?sw=200&sh=200&sm=fit&sfrm=png"
+            alt="cappotto scontato 26% "
+          />
+          <div class="sconto-applicato">-33%</div>
+          <div class="prize-text">
+            RRP Da <span class="old-prize">109.99€</span> a
+            <span class="new-prize">80.99€</span>
+          </div>
+        </div>
+        <div class="card-discount-element">
+          <img
+            src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw573b5223/images/3/2/7/7/327778a.jpg?sw=200&sh=200&sm=fit&sfrm=png"
+            alt="cappotto scontato 26% "
+          />
+          <div class="sconto-applicato">-33%</div>
+          <div class="prize-text">
+            RRP Da <span class="old-prize">109.99€</span> a
+            <span class="new-prize">80.99€</span>
+          </div>
+        </div>
+        <div class="card-discount-element">
+          <img
+            src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dweb379845/images/5/0/8/3/508388a.jpg?sw=200&sh=200&sm=fit&sfrm=png"
+            alt="cappotto scontato 26% "
+          />
+          <div class="sconto-applicato">-33%</div>
+          <div class="prize-text">
+            RRP Da <span class="old-prize">109.99€</span> a
+            <span class="new-prize">80.99€</span>
+          </div>
+        </div>
+        <div class="card-discount-element">
+          <img
+            src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw63f5203d/images/3/7/9/8/379800a.jpg?sw=200&sh=200&sm=fit&sfrm=png"
+            alt="cappotto scontato 26% "
+          />
+          <div class="sconto-applicato">-33%</div>
+          <div class="prize-text">
+            RRP Da <span class="old-prize">109.99€</span> a
+            <span class="new-prize">80.99€</span>
+          </div>
+        </div>
+        <div class="card-discount-element">
+          <img
+            src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw9caddd89/images/3/7/0/4/370422za.jpg?sw=200&sh=200&sm=fit&sfrm=png"
+            alt="cappotto scontato 26% "
+          />
+          <div class="sconto-applicato">-33%</div>
+          <div class="prize-text">
+            RRP Da <span class="old-prize">109.99€</span> a
+            <span class="new-prize">80.99€</span>
+          </div>
+        </div>
+        <button class="btn-arrow-dx" type="button" title="arrow-dx">❯</button>
+      </div>
+
+      <!-- speciale home  -->
+      <div class="contenitore">
+        <img
+          src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Library-Sites-EMPSharedLibrary/default/dwd6545846/TOP100_750x300_SAM-7362_Black_Week_2025_Grafiken_v2.jpg?sw=768"
+          class="img-top100"
+        />
+        <div class="scritteBottone">
+          <h1 class="specialeBestseller">Speciale Bestseller</h1>
+          <h3 class="giacche">
+            Pelle, tessuto e carattere: le 100 giacche più cool a prezzi
+            imperdibili!
+          </h3>
+          <button class="compraOra">Compra ora!</button>
+        </div>
+      </div>
+      <!-- 6x container discount -->
+      <h4 class="title-product-discount">
+        Esplora i prodotti scontati solo su EMP
+      </h4>
+      <div class="container-discount-6x">
+        <button class="btn-arrow-sx" type="button" title="arrow-sx">❮</button>
+        <div class="card-discount-element">
+          <img
+            src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwbce2676e/images/3/3/2/6/332644a-emp.jpg?sw=200&sh=200&sm=fit&sfrm=png"
+            alt="cappotto scontato 26% "
+          />
+          <div class="sconto-applicato">-33%</div>
+          <div class="prize-text">
+            RRP Da <span class="old-prize">109.99€</span> a
+            <span class="new-prize">80.99€</span>
+          </div>
+        </div>
+        <div class="card-discount-element">
+          <img
+            src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw2fa02748/images/4/6/6/9/466955a.jpg?sw=200&sh=200&sm=fit&sfrm=png"
+            alt="cappotto scontato 26% "
+          />
+          <div class="sconto-applicato">-33%</div>
+          <div class="prize-text">
+            RRP Da <span class="old-prize">109.99€</span> a
+            <span class="new-prize">80.99€</span>
+          </div>
+        </div>
+        <div class="card-discount-element">
+          <img
+            src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw573b5223/images/3/2/7/7/327778a.jpg?sw=200&sh=200&sm=fit&sfrm=png"
+            alt="cappotto scontato 26% "
+          />
+          <div class="sconto-applicato">-33%</div>
+          <div class="prize-text">
+            RRP Da <span class="old-prize">109.99€</span> a
+            <span class="new-prize">80.99€</span>
+          </div>
+        </div>
+        <div class="card-discount-element">
+          <img
+            src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dweb379845/images/5/0/8/3/508388a.jpg?sw=200&sh=200&sm=fit&sfrm=png"
+            alt="cappotto scontato 26% "
+          />
+          <div class="sconto-applicato">-33%</div>
+          <div class="prize-text">
+            RRP Da <span class="old-prize">109.99€</span> a
+            <span class="new-prize">80.99€</span>
+          </div>
+        </div>
+        <div class="card-discount-element">
+          <img
+            src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw63f5203d/images/3/7/9/8/379800a.jpg?sw=200&sh=200&sm=fit&sfrm=png"
+            alt="cappotto scontato 26% "
+          />
+          <div class="sconto-applicato">-33%</div>
+          <div class="prize-text">
+            RRP Da <span class="old-prize">109.99€</span> a
+            <span class="new-prize">80.99€</span>
+          </div>
+        </div>
+        <div class="card-discount-element">
+          <img
+            src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw9caddd89/images/3/7/0/4/370422za.jpg?sw=200&sh=200&sm=fit&sfrm=png"
+            alt="cappotto scontato 26% "
+          />
+          <div class="sconto-applicato">-33%</div>
+          <div class="prize-text">
+            RRP Da <span class="old-prize">109.99€</span> a
+            <span class="new-prize">80.99€</span>
+          </div>
+        </div>
+        <button class="btn-arrow-dx" type="button" title="arrow-dx">❯</button>
+      </div>
+
+      <!-- Catalogo x5 Elementi -->
+      <div class="all-component-elements">
+        <div class="div-title-catalog-5-element">
+          <p class="title-catalog-5-element">Scopri tutto il merch su EMP!</p>
+        </div>
+        <div class="catalog-griglia">
+          <ul class="list-catalog">
+            <li>
+              <img
+                class="owl-lazy"
+                data-src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwd8579393/images/5/8/1/1/581190a.jpg?sw=200&amp;sh=200&amp;sm=fit&amp;sfrm=png"
+                alt="Black Premium by EMP, Black Premium by EMP, Giacca invernale"
+                onerror="this.src='/on/demandware.static/Sites-GLB-Site/-/it/dw9c78cab5/images/noimage.jpg'"
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwd8579393/images/5/8/1/1/581190a.jpg?sw=200&amp;sh=200&amp;sm=fit&amp;sfrm=png"
+                style="opacity: 1"
+              /><span>129,99 €</span>
+            </li>
+            <li>
+              <img
+                class="owl-lazy"
+                data-src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwb7e6d1ed/images/5/8/6/2/586262a.jpg?sw=200&amp;sh=200&amp;sm=fit&amp;sfrm=png"
+                alt="ARIBAY6, Khujo, Giacca invernale"
+                onerror="this.src='/on/demandware.static/Sites-GLB-Site/-/it/dw9c78cab5/images/noimage.jpg'"
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwb7e6d1ed/images/5/8/6/2/586262a.jpg?sw=200&amp;sh=200&amp;sm=fit&amp;sfrm=png"
+                style="opacity: 1"
+              /><span>167,99 €</span>
+            </li>
+            <li>
+              <img
+                class="owl-lazy"
+                data-src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwdf756057/images/5/8/6/2/586243a.jpg?sw=200&amp;sh=200&amp;sm=fit&amp;sfrm=png"
+                alt="DIER, Khujo, Giacca invernale"
+                onerror="this.src='/on/demandware.static/Sites-GLB-Site/-/it/dw9c78cab5/images/noimage.jpg'"
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwdf756057/images/5/8/6/2/586243a.jpg?sw=200&amp;sh=200&amp;sm=fit&amp;sfrm=png"
+                style="opacity: 1"
+              /><span>183,99 €</span>
+            </li>
+            <li>
+              <img
+                class="owl-lazy"
+                data-src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwdc2f42ba/images/5/9/2/3/592324a.jpg?sw=200&amp;sh=200&amp;sm=fit&amp;sfrm=png"
+                alt="Hellraiser - Ozzy &amp; Lemmy, Ozzy Osbourne, T-Shirt"
+                onerror="this.src='/on/demandware.static/Sites-GLB-Site/-/it/dw9c78cab5/images/noimage.jpg'"
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwdc2f42ba/images/5/9/2/3/592324a.jpg?sw=200&amp;sh=200&amp;sm=fit&amp;sfrm=png"
+                style="opacity: 1"
+              />
+              <span class="percent-sale">-20%</span
+              ><span
+                >Da <s>19,99 €</s> Da
+                <span class="text-sale">15,99 €</span></span
+              >
+            </li>
+            <li>
+              <img
+                class="owl-lazy"
+                data-src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw5e326111/images/5/9/0/6/590633a.jpg?sw=200&amp;sh=200&amp;sm=fit&amp;sfrm=png"
+                alt="Legends, Sabaton, Felpa con cappuccio"
+                onerror="this.src='/on/demandware.static/Sites-GLB-Site/-/it/dw9c78cab5/images/noimage.jpg'"
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw5e326111/images/5/9/0/6/590633a.jpg?sw=200&amp;sh=200&amp;sm=fit&amp;sfrm=png"
+                style="opacity: 1"
+              />
+              <span>Da 64,99€</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Sconti Home/ Card Promo-->
+      <div class="card-promo-container">
+        <div class="cards-grid">
+          <!-- Card 1: Stagione delle feste -->
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Library-Sites-EMPSharedLibrary/default/dwde445ae0/SAM-6069_MT1000_XMAS25.jpg?sw=335"
+                alt="stagione delle feste ad alto volume"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Stagione delle Feste, ad alto volume</h3>
+
+              <a href="#" class="card-button">Scopri ora!</a>
+            </div>
+          </div>
+
+          <!-- Card 2:Nuovi arrivi -->
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Library-Sites-EMPSharedLibrary/default/dw25156803/SAM-5652_MT1000_Neuheiten_Teaser_2025.jpg?sw=335"
+                alt="Nuovi arrivi"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Nuovi arrivi</h3>
+
+              <a href="#" class="card-button">Scopri ora!</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Stranger Things-->
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Library-Sites-EMPSharedLibrary/default/dwbaaaccb0/SAM-5867_MT1000_Stranger_Things_Season_5_V2.jpg?sw=335"
+                alt="Stranger things"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Stranger Things</h3>
+              <p class="card-subtitle">
+                Un'ultima avventura a Hawkins. Sarà leggendaria.
+              </p>
+              <a href="#" class="card-button">Scopri ora!</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Disney -->
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Library-Sites-EMPSharedLibrary/default/dwade921e0/MT1000_SAM-7576_Disney_Sale.jpg?sw=335"
+                alt="la magia delle offerte Disney"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">La magia delle offerte Disney</h3>
+
+              <a href="#" class="card-button">Scopri ora!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card Cuore -->
+      <div class="heart-card-container">
+        <div class="heart-card-title">
+          <h2 class="heart-title">Cosa ti fa battere il cuore?</h2>
+        </div>
+        <div class="heart-card-grid">
+          <!-- Card maglioni natalizi -->
+          <div class="heart-card">
+            <div class="heart-card-image">
+              <img
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-storefront-emp/default/dw8af3d56d/SAM-7264_MT1000_XMAS_2025_LP_Ugly_Sweater.jpg?sw=500"
+                alt="Maglioni Natalizi"
+              />
+            </div>
+            <div class="heart-content">
+              <a href="#" class="heart-button">Maglioni natalizi</a>
+            </div>
+          </div>
+
+          <!-- Card Tshirt -->
+          <div class="heart-card">
+            <div class="heart-card-image">
+              <img
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-storefront-emp/default/dw5b4b4d52/SAM-7264_MT1000_XMAS_2025_LP_XmasBandShirts.jpg?sw=500"
+                alt="Tshirt"
+              />
+            </div>
+            <div class="heart-content">
+              <a href="#" class="heart-button">T-Shirt</a>
+            </div>
+          </div>
+
+          <!-- Card Idee regalo -->
+          <div class="heart-card">
+            <div class="heart-card-image">
+              <img
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-storefront-emp/default/dw32be4e04/SAM-7264_MT1000_XMAS_2025_LP_Band.jpg?sw=500"
+                alt="Idee regalo"
+              />
+            </div>
+            <div class="heart-content">
+              <a href="#" class="heart-button">Idee Regalo</a>
+            </div>
+          </div>
+
+          <!-- Card Palline di Natale -->
+          <div class="heart-card">
+            <div class="heart-card-image">
+              <img
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-storefront-emp/default/dw370ee277/SAM-7264_MT1000_XMAS_2025_ChristmasBalls_V3.jpg?sw=500"
+                alt="Palline di Natale"
+              />
+            </div>
+            <div class="heart-content">
+              <a href="#" class="heart-button">Palline di Natale</a>
+            </div>
+          </div>
+
+          <!-- Card Festivitià -->
+          <div class="heart-card">
+            <div class="heart-card-image">
+              <img
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-storefront-emp/default/dw59db4953/SAM-7097_MT1000_Winter_of_Love_2025_Festive_V2.jpg?sw=500"
+                alt="Festivitià"
+              />
+            </div>
+            <div class="heart-content">
+              <a href="#" class="heart-button">Festivitià</a>
+            </div>
+          </div>
+
+          <!-- Card Gioielli -->
+          <div class="heart-card">
+            <div class="heart-card-image">
+              <img
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-storefront-emp/default/dw04d9bf98/SAM-7264_MT1000_XMAS_2025_LP_Jewellery.jpg?sw=500"
+                alt="Gioielli"
+              />
+            </div>
+            <div class="heart-content">
+              <a href="#" class="heart-button">Gioielli</a>
+            </div>
+          </div>
+
+          <!-- Card decorazioni di Natale -->
+          <div class="heart-card">
+            <div class="heart-card-image">
+              <img
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-storefront-emp/default/dw285d3e0d/SAM-7264_MT1000_XMAS_2025_Deko_V3.jpg?sw=500"
+                alt="Decorazioni di Natale"
+              />
+            </div>
+            <div class="heart-content">
+              <a href="#" class="heart-button">Decorazioni di Natale</a>
+            </div>
+          </div>
+
+          <!-- Card Calendari dell'avvento -->
+          <div class="heart-card">
+            <div class="heart-card-image">
+              <img
+                src="https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-storefront-emp/default/dwacaa5065/SAM-7264_MT1000_XMAS_2025_Adventskalender_V3.jpg?sw=500"
+                alt="Calendari dell'avvento "
+              />
+            </div>
+            <div class="heart-content">
+              <a href="#" class="heart-button">Calendari dell'avvento</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
   </body>
 </html>

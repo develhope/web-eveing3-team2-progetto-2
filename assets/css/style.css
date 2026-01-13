@@ -12,10 +12,14 @@
 @import url("../../components/footer-social/footerSocial.css");
 @import url("../../components/footerAltriShop/footerAltriShop.css");
 @import url("../../components/footerLungo/footerLungo.css");
+@import url("../../components/footerNewsletter/newsletter.css");
 @import url("../../components/home-6-discount/home-6-discount.css");
 @import url("../../components/home-discount-1/home-discount-1.css");
 @import url("../../components/homepage-card/index.css");
+/* @import url("navbar"); */
+@import url("../../components/OfferteHome/offerteHome.css");
 @import url("../../components/paginaAttuale/paginaAttuale.css");
+@import url("../../components/promo2p/promo.css");
 @import url("../../components/seconda-pagina-filtro/Seconda_Pagina _Filtro.css");
 @import url("../../components/seconda-pagina-recenti/Seconda Pagina - Recenti.css");
 @import url("../../components/SecondaPaginaArticolo/Articolo_2.css");
