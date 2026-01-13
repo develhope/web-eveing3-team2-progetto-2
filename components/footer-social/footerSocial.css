@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-footer-social {
+  background: linear-gradient(180deg, #2d2d2d 0%, #000000 100%);
+  padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1.5rem, 5vw, 3rem);
+  color: white;
+  clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+  margin-top: 3rem;
+}
+
+.footer-social-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-title {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 600;
+  margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+  letter-spacing: 0.5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: clamp(0.8rem, 2vw, 1.2rem);
+  align-items: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(40px, 8vw, 50px);
+  height: clamp(40px, 8vw, 50px);
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: clamp(6px, 1.5vw, 8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[class^="social-icon"] {
+  width: 60%;
+  height: 60%;
+  fill: #fff;
+  transition: fill 0.3s ease;
+}
+
+.social-link:hover .social-icon-facebook {
+  fill: #1877f2;
+}
+
+.social-link:hover .social-icon-instagram {
+  fill: #e4405f;
+}
+
+.social-link:hover .social-icon-youtube {
+  fill: #ff0000;
+}
+
+.social-link:hover .social-icon-x {
+  fill: #0088cc;
+}
+
+.social-link:hover .social-icon-spotify {
+  fill: #1db954;
+}
+
+.social-link:hover .social-icon-telegram {
+  fill: #0088cc;
+}
+
+@media (max-width: 768px) {
+  .page-footer-social {
+    padding: clamp(1.5rem, 3vw, 2rem) clamp(1rem, 3vw, 1.5rem);
+    clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 15%);
+  }
+
+  .footer-social-title {
+    text-align: center;
+    margin-bottom: clamp(1.2rem, 3vw, 1.8rem);
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(0.5rem, 2vw, 1rem);
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .social-link {
+    flex: 0 0 auto;
+  }
+
+  /* Prima riga: 4 icone */
+  .social-link:nth-child(1),
+  .social-link:nth-child(2),
+  .social-link:nth-child(3),
+  .social-link:nth-child(4) {
+    order: 1;
+  }
+
+  /* Seconda riga: 2 icone */
+  .social-link:nth-child(5),
+  .social-link:nth-child(6) {
+    order: 2;
+  }
+}

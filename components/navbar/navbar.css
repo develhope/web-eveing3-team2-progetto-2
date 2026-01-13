@@ -1,0 +1,98 @@
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.top-bar {
+  background-color: #000;
+  color: white;
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box {
+  background: white;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  border: none;
+  padding: 5px;
+  width: 200px;
+}
+
+.search-box button {
+  background: transparent;
+  border: none;
+}
+
+.icon {
+  width: 200px;
+}
+
+.user-actions span {
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.look {
+  width: 30px;
+}
+
+.login {
+  text-decoration-line: none;
+  color: white;
+}
+
+.heart {
+  text-decoration-line: none;
+}
+
+.carrello {
+  text-decoration-line: none;
+  color: white;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: absolute;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-section-highlights {
+  display: flex;
+  flex-direction: column;
+}
+.menu-section-highlights img {
+  width: 300px;
+  height: 86px;
+}
+
+.main-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.main-menu a:hover {
+  color: #000;
+}

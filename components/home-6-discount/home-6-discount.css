@@ -1,0 +1,52 @@
+.container-discount-6x {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-arrow-sx,
+.btn-arrow-dx {
+  height: 20%;
+  font-weight: bolder;
+  font-size: large;
+  border: none;
+  background-color: white;
+}
+
+.card-discount-element {
+  padding: 20px;
+}
+
+.card-discount-element > img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.sconto-applicato {
+  color: white;
+  margin: 10px auto;
+  width: 50px;
+  padding: 3px;
+  border: 1px solid var(--brand-primary);
+  background-color: var(--brand-primary);
+}
+
+.old-prize {
+  color: black;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+.new-prize {
+  color: var(--brand-secondary);
+  font-weight: bold;
+}
+
+@media (max-width: 769px) {
+  .container-discount-6x {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
