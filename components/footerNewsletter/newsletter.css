@@ -1,0 +1,58 @@
+.newsletter-container {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding: 20px 20px 20px 40px;
+  position: relative;
+}
+
+.titolo {
+  color: white;
+}
+
+.link-altro,
+.link-privacy,
+.link-annullare {
+  color: white;
+}
+
+.email {
+  border: none;
+  border-bottom: 1px solid gray;
+  color: grey;
+  background: transparent;
+}
+
+.privacy-text {
+  color: gray;
+  padding: 20px 0px 20px 0px;
+}
+
+.iscriviti {
+  padding: 10px 100px 10px 100px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.info {
+  color: gray;
+  padding: 20px 0px 20px 0px;
+}
+
+.sconto-rosso {
+  background-color: red;
+  color: white;
+  padding: 15px;
+  position: absolute;
+  right: 750px;
+  top: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.sconto-rosso span {
+  font-weight: bold;
+  font-size: 23px;
+}

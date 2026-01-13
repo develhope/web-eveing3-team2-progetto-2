@@ -1,0 +1,59 @@
+.promo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: black;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.icon {
+  align-self: flex-start;
+  background-size: contain;
+  width: 295px;
+}
+
+.testo-promo {
+  color: white;
+  font-size: 16px;
+}
+
+.btn {
+  background-color: #b40019;
+  border-radius: 4px;
+  padding: 10px 40px 10px 40px;
+  color: white;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .promo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .logo {
+    background-image: url(https://www.emp-online.it/on/demandware.static/Sit…091412/images//logos/backstageclub_logo_white.svg);
+    align-self: center;
+  }
+
+  .testo-promo {
+    padding-top: 0;
+    font-size: 14px;
+  }
+
+  .testo-promo p {
+    margin: 5px 0px 5px 10px;
+  }
+
+  .bottone {
+    align-self: center;
+  }
+
+  .btn {
+    margin: 5px 0px 0px 0px;
+    padding: 10px 75px 10px 75px;
+  }
+}
