@@ -25,10 +25,20 @@
 
 .privacy-text {
   color: gray;
+  padding: 20px 0px 20px 0px;
+}
+
+.iscriviti {
+  padding: 10px 100px 10px 100px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
 }
 
 .info {
   color: gray;
+  padding: 20px 0px 20px 0px;
 }
 
 .sconto-rosso {
