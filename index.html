@@ -15,8 +15,60 @@
     <title>EMP Home</title>
   </head>
   <body>
+    <div id="top"></div>
     <header>
       <!-- Navbar -->
+        <div class="top-bar">
+        <div class="container top-content">
+          <div class="search-box">
+            <input type="text" placeholder="Cosa stai cercando?" />
+            <button>🔍</button>
+          </div>
+
+          <div class="logo">
+            <a href="https://www.emp-online.it/">
+              <img
+                class="icon"
+                style="background-color: black"
+                src="./img/logo.svg"
+              />
+            </a>
+          </div>
+
+          <div class="user-actions">
+            <span>
+              <a href="https://www.emp-online.it/backstageclub/"> </a
+            ></span>
+            <span><a href="#"></a></span>
+            <span
+              ><a href="#"
+                ><img class="look" style="background-color: black;"
+                src=https://www.emp-online.it/on/demandware.static/-/Library-Sites-EMPSharedLibrary/default/dwaaab7858/100109_Logo_60x60_Desk_GtLook_white.png
+                />
+              </a></span
+            >
+            <span> <a class="login" href="#"> 👤 Login </a> </span>
+            <span> <a class="heart" href="#"> ❤️ </a> </span>
+            <span> <a class="carrello" href="#"> 🛒 0,00 € </a></span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="main-menu">
+        <div class="container">
+          <ul class="nav-links">
+            <li class="dropdown"><a href="#">Novità</a></li>
+            <li><a href="#">Band Merch</a></li>
+            <li><a href="#">Intrattenimento</a></li>
+            <li><a href="#">Marchi</a></li>
+            <li><a href="#">Stile di vita</a></li>
+            <li><a href="#">Donna</a></li>
+            <li><a href="#">Uomo</a></li>
+            <li><a href="#">Bambini</a></li>
+            <li><a href="#" class="offers">Offerte %</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <!-- home discount container -->
@@ -1196,7 +1248,10 @@
       </div>
     </div>
     </footer>
-    <button id="ButtonTop">
+    
+  
+    
+    <a class="button-top" href="#top" aria-label="Torna su">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -1212,22 +1267,6 @@
           stroke-linejoin="round"
         />
       </svg>
-    </button>Ciao<button id="ButtonTop">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        width="20"
-        height="20"
-      >
-        <polyline
-          points="6 14 12 8 18 14"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </button>
+    </a>
   </body>
 </html>
