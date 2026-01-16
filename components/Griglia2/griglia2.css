@@ -1,0 +1,137 @@
+:root {
+  --bianco: #ffffff;
+  --testo: #111111;
+  --muted: #6b6b6b;
+  --linea: #d8d8d8;
+  --badge: #efefef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bianco);
+  color: var(--testo);
+}
+
+.campo-vetrina {
+  width: 100%;
+}
+
+.scacchiera-shop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--linea);
+  border-left: 1px solid var(--linea);
+}
+
+.tessera-shop {
+  position: relative;
+  min-height: 420px;
+  padding: 22px 18px 18px;
+  border-right: 1px solid var(--linea);
+  border-bottom: 1px solid var(--linea);
+  background: var(--bianco);
+}
+
+.tasto-carrello {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid var(--linea);
+  background: var(--badge);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.icona-carrello {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.frame-foto {
+  display: grid;
+  place-items: center;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  text-decoration: none;
+}
+
+.foto-prodotto {
+  width: 78%;
+  max-width: 280px;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+}
+
+.riga-etichette {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 6px 0 10px;
+}
+
+.etichetta-grigia {
+  font-size: 12px;
+  padding: 6px 8px;
+  border: 1px solid var(--linea);
+  background: var(--badge);
+  color: var(--testo);
+  line-height: 1;
+}
+
+.riga-prezzo {
+  margin: 2px 0 10px;
+}
+
+.prezzo-secco {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.titolo-prodotto {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.briciole-brand {
+  margin: 0;
+  font-size: 13px;
+  color: var(--testo);
+}
+
+.slash {
+  color: var(--muted);
+  padding: 0 4px;
+}
+
+@media (max-width: 1100px) {
+  .scacchiera-shop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  .scacchiera-shop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tessera-shop {
+    min-height: 410px;
+  }
+}
+
+@media (max-width: 520px) {
+  .scacchiera-shop {
+    grid-template-columns: 1fr;
+  }
+}
