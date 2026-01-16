@@ -16,16 +16,22 @@ body {
 /* Stili per il Footer */
 
 .main-footer {
-  padding: 40px 10%;
   background-color: #fff;
   border-top: 1px solid #eee;
   font-size: 14px;
+  padding-left: 30px;
+  transform: skewY(#000 -1.5deg);
+  transform-origin: 100%;
+  bottom: 0;
 }
 
 /* Stili per la sezione superiore (Orario di Servizio Clienti) */
 .footer-top {
-  margin-bottom: 40px;
-  padding-bottom: 20px;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 10%);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
   /* border-bottom: 1px solid #eee; */
 }
 

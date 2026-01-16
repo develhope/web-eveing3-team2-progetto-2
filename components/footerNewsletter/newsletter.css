@@ -6,6 +6,14 @@
   position: relative;
 }
 
+/* .poligono {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 10%);
+  transform: skewY(#000 -1.5deg);
+  transform-origin: 100%;
+  background-color: chocolate;
+  padding-bottom: 40px;
+}*/
+
 .titolo {
   color: white;
 }
@@ -55,4 +63,12 @@
 .sconto-rosso span {
   font-weight: bold;
   font-size: 23px;
+}
+
+.poligono {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 10%);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
