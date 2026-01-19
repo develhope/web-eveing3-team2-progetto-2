@@ -70,6 +70,10 @@
 }
 
 .button-not-lose {
+  border-top: none;
+  border-left: none;
+  background-color: black;
+  color: white;
   padding: 10px;
   border-bottom: 1px solid white;
   margin-bottom: 30px;
@@ -86,6 +90,8 @@
 }
 
 .button-promo {
+  background-color: black;
+  color: white;
   border: 1px solid white;
   border-radius: 3px;
   padding: 10px 50px;
