@@ -1,5 +1,4 @@
 .container {
-  max-width: 1200px;
   padding: 0 20px;
 }
 
@@ -12,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
 }
 
 .search-box {
@@ -32,8 +32,9 @@
   border: none;
 }
 
-.icon {
-  width: 200px;
+.icon-navbar {
+  width: 115px;
+  height: 40px;
 }
 
 .user-actions span {
@@ -68,6 +69,7 @@
   list-style: none;
   display: flex;
   gap: 20px;
+  padding: 10px;
 }
 
 .main-menu a {
