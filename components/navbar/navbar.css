@@ -61,23 +61,7 @@
 
 .dropdown-container {
   position: relative;
-}
-
-.dropdown-menu {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  position: absolute;
-  display: flex;
-  gap: 20px;
-}
-
-.menu-section-highlights {
-  display: flex;
-  flex-direction: column;
-}
-.menu-section-highlights img {
-  width: 300px;
-  height: 86px;
+  border: 1px solid blue;
 }
 
 .main-menu ul {
@@ -95,4 +79,32 @@
 
 .main-menu a:hover {
   color: #000;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: absolute;
+  display: flex;
+  gap: 20px;
+}
+.menu-section-abbigliamento h3 {
+  text-align: center;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+}
+
+.menu-section a {
+  text-decoration: none;
+}
+
+.highlights img {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 80px;
 }
