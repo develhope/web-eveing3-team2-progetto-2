@@ -7,11 +7,91 @@
 const prodotti = [
   {
     id: 1,
-    nome: "Teschio Ghost rider",
-    categoria: "Cargo",
-    prezzo: "699€",
     immagine:
-      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwd2ab7748/images/5/9/5/6/595640a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw6ce0a8c8/images/4/4/8/0/448074a.jpg?sw=350&sh=400&sm=fit&sfrm=png",
+    stato: "Esclusiva",
+    taglia: "Taglia Extra",
+    prezzo: "75.99 €",
+    nome: "EMP Signature Collection",
+    brand: "Slipknot",
+    categoria: "Felpa jogging",
+  },
+  {
+    id: 2,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwdc2f42ba/images/5/9/2/3/592324a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "Quasi esaurito",
+    taglia: "Anche in Taglie Forti",
+    prezzo: "Da 19,99 €",
+    nome: "Hellraiser - Ozzy & Lemmy",
+    brand: "Ozzy Osbourne",
+    categoria: "T-Shirt",
+  },
+  {
+    id: 3,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw1b2f640e/images/3/9/7/1/397124a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "Premium",
+    taglia: "Anche in Taglie Forti",
+    prezzo: "323,99 €",
+    nome: "EMP Signature Collection",
+    brand: "Slipknot",
+    categoria: "Giacca di pelle",
+  },
+  {
+    id: 4,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw2630f6af/images/5/6/0/2/560285.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "Esclusiva",
+    taglia: "",
+    prezzo: "Da 539,99 €",
+    nome: "Nixon - 51-30",
+    brand: "The Rolling Stones",
+    categoria: "Orologi da polso",
+  },
+  {
+    id: 5,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwc2eedf77/images/3/4/3/0/343005.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "",
+    taglia: "Anche in Taglie Forti",
+    prezzo: "Da 269,99 €",
+    nome: "Rock & Roll - Will Never Die",
+    brand: "AC-DC",
+    categoria: "Giacca di pelle",
+  },
+  {
+    id: 6,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw5a8d907c/images/3/6/9/7/369707a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "",
+    taglia: "Anche in Taglie Forti",
+    prezzo: "Da 19,99 €",
+    nome: "...And Justice For All - Tracklist",
+    brand: "Metallica",
+    categoria: "T-Shirt",
+  },
+  {
+    id: 7,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw66b6d349/images/5/7/1/9/571994a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "",
+    taglia: "Anche in Taglie Forti",
+    prezzo: "Da 75,99 €",
+    nome: "EMP Signature Collection",
+    brand: "Electric Callboy",
+    categoria: "Felpa jogging",
+  },
+  {
+    id: 8,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw35883168/images/5/8/2/4/582485a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "",
+    taglia: "Anche in Taglie Forti",
+    prezzo: "Da 19,99 €",
+    nome: "EMP Signature Collection",
+    brand: "Five Finger Death Punch",
+    categoria: "T-Shirt",
   },
 ];
 
@@ -35,18 +115,17 @@ function mostraProdotti(arrayDati) {
           <img class="foto-prodotto" src="${prodotto.immagine}" alt="${prodotto.nome}" />
         </a>
         <div class="riga-etichette">
-          <span class="etichetta-grigia">Esclusiva</span>
-          <span class="etichetta-grigia">Taglia Extra</span>
+          <span class="etichetta-grigia">${prodotto.stato}</span>
+          <span class="etichetta-grigia">${prodotto.taglia}</span>
         </div>
         <div class="riga-prezzo">
           <span class="prezzo-secco">${prodotto.prezzo}</span>
         </div>
         <h3 class="titolo-prodotto">${prodotto.nome}</h3>
         <p class="briciole-brand">
-          Slipknot <span class="slash">/</span>${prodotto.categoria}
+          ${prodotto.brand} <span class="slash">/</span>${prodotto.categoria}
         </p>
-      </article>
-    )`;
+      </article>`;
   });
 }
 
