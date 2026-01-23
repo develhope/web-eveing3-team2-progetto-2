@@ -225,7 +225,7 @@ const prodottiFiltrati = prodotti.filter((prodotto) => {
 });
 
 // Poi passi l'array filtrato alla funzione che stampa l'HTML
-mostraProdotti(prodottiFiltrati);
+// mostraProdotti(prodottiFiltrati);
 
 // Rendiamolo dinamico (Interazione utente)
 // Immagina di avere una select nel tuo HTML per scegliere la categoria:
@@ -236,10 +236,10 @@ selector.addEventListener("change", (event) => {
   const valoreScelto = event.target.value;
 
   if (valoreScelto === "tutti") {
-    mostraProdotti(prodotti);
+    // mostraProdotti(prodotti);
   } else {
     const filtrati = prodotti.filter((p) => p.categoria === valoreScelto);
-    mostraProdotti(filtrati);
+    // mostraProdotti(filtrati);
   }
 });
 
