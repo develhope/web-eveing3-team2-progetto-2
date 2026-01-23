@@ -220,28 +220,28 @@ mostraProdotti(prodotti);
 // Esempio: Filtrare per Categoria
 // Se volessi vedere solo i prodotti della categoria "Elettronica":
 
-// const prodottiFiltrati = prodotti.filter((prodotto) => {
-//   return prodotto.categoria === "Elettronica";
-// });
+const prodottiFiltrati = prodotti.filter((prodotto) => {
+  return prodotto.categoria === "Elettronica";
+});
 
-// // Poi passi l'array filtrato alla funzione che stampa l'HTML
-// mostraProdotti(prodottiFiltrati);
+// Poi passi l'array filtrato alla funzione che stampa l'HTML
+mostraProdotti(prodottiFiltrati);
 
-// // Rendiamolo dinamico (Interazione utente)
-// // Immagina di avere una select nel tuo HTML per scegliere la categoria:
+// Rendiamolo dinamico (Interazione utente)
+// Immagina di avere una select nel tuo HTML per scegliere la categoria:
 
-// const selector = document.getElementById("filtro-categoria");
+const selector = document.getElementById("filtro-categoria");
 
-// selector.addEventListener("change", (event) => {
-//   const valoreScelto = event.target.value;
+selector.addEventListener("change", (event) => {
+  const valoreScelto = event.target.value;
 
-//   if (valoreScelto === "tutti") {
-//     mostraProdotti(prodotti);
-//   } else {
-//     const filtrati = prodotti.filter((p) => p.categoria === valoreScelto);
-//     mostraProdotti(filtrati);
-//   }
-// });
+  if (valoreScelto === "tutti") {
+    mostraProdotti(prodotti);
+  } else {
+    const filtrati = prodotti.filter((p) => p.categoria === valoreScelto);
+    mostraProdotti(filtrati);
+  }
+});
 
 // Riassunto del meccanismo
 // Dati: Hai un array originale (prodotti) che non viene mai modificato.
