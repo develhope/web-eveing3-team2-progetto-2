@@ -93,6 +93,94 @@ const prodotti = [
     brand: "Five Finger Death Punch",
     categoria: "T-Shirt",
   },
+  {
+    id: 9,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw5be4f4f3/images/5/8/7/9/587970a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "Dettagli in metallo",
+    taglia: "",
+    prezzo: "75,99 €",
+    nome: "Men's Harland Top",
+    brand: "Heartless",
+    categoria: "Maglia a maniche lunghe",
+  },
+  {
+    id: 10,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw55e4fcf4/images/5/8/8/7/588756a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "Esclusiva",
+    taglia: "Ricamato",
+    prezzo: "43,99 €",
+    nome: "Lost Souls",
+    brand: "Rock Rebel by EMP",
+    categoria: "Felpa",
+  },
+  {
+    id: 11,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwf4578047/images/5/8/8/6/588646a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "Esclusiva",
+    taglia: "",
+    prezzo: "10,99 €",
+    nome: "Built For Comfort",
+    brand: "RED by EMP",
+    categoria: "Leggings",
+  },
+  {
+    id: 12,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwf5ded4a2/images/5/8/8/5/588597a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "Esclusiva",
+    taglia: "Ricamato",
+    prezzo: "43,99 €",
+    nome: "Megan",
+    brand: "RED by EMP",
+    categoria: "Jeans",
+  },
+  {
+    id: 13,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw20497392/images/5/9/5/4/595473a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "Stampa Speciale",
+    taglia: "",
+    prezzo: "Da 24,99 €",
+    nome: "Batman Logo FlockPrint",
+    brand: "Batman",
+    categoria: "T-Shirt",
+  },
+  {
+    id: 14,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw823d78e7/images/5/9/6/4/596427a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "Premium",
+    taglia: "Anche in Taglie Forti",
+    prezzo: "Da 19,99 €",
+    nome: "Nekomata",
+    brand: "Pinku Kult",
+    categoria: "T-Shirt",
+  },
+  {
+    id: 15,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw05a2cf43/images/5/8/4/5/584537a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "Destroyed Look",
+    taglia: "Aperture",
+    prezzo: "48,99 €",
+    nome: "Kara Vex Jumper",
+    brand: "Banned",
+    categoria: "Maglione",
+  },
+  {
+    id: 16,
+    immagine:
+      "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw6e311774/images/5/8/8/9/588939a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
+    stato: "Esclusiva",
+    taglia: "Ricamato",
+    prezzo: "26,99 €",
+    nome: "Celtic Snake T-shirt",
+    brand: "Black Premium by EMP",
+    categoria: "T-Shirt",
+  },
 ];
 
 // ### 2. Come applicarli al progetto (Visualizzazione)
