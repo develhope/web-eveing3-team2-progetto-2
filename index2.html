@@ -72,7 +72,8 @@
     </header>
     <main>
       <!-- Filtri -->
-        <div class="all-components-second-page-filter">
+        <body>
+    <div class="all-components-second-page-filter">
       <div class="section-ordina">
         <label class="select sorting-select">
           <select name="sorting">
@@ -96,78 +97,166 @@
       </div>
       <div class="filter-taglia-colore-marca-prezzo">
         <div class="section-right-filter">
-          <div class="first-filter-size">
-            <label for="input-size"></label>
-            <span class="written-size">Taglia</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              role="presentation"
-              focusable="false"
-              fill="#999"              
-              viewBox="0 0 16 16"
-              class="icon-size"
-              width="25"
-              height="35"
-            >
-              <path
-                d="M2.82 5.044 8 10.399 13.197 5l.963.875-5.364 5.565a1.164 1.164 0 0 1-1.636 0L1.875 5.945l.945-.901Z"
-              ></path>
-            </svg>
-          </div>
-          <div class="second-section-color">
-            <label for="input-color"></label>
-            <span class="written-color">Colore</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              role="presentation"
-              focusable="false"
-              fill="#999"
-              viewBox="0 0 16 16"
-              class="icon-color"
-              width="25"
-              height="35"
-            >
-              <path
-                d="M2.82 5.044 8 10.399 13.197 5l.963.875-5.364 5.565a1.164 1.164 0 0 1-1.636 0L1.875 5.945l.945-.901Z"
-              ></path>
-            </svg>
-          </div>
-          <div class="third-section-marca">
-            <label for="input-marca"> </label
-            ><span class="written-marca">Marca</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              role="presentation"
-              focusable="false"
-              fill="#999"          
-              viewBox="0 0 16 16"
-              class="icon-marca"
-              width="25"
-              height="35"
-            >
-              <path
-                d="M2.82 5.044 8 10.399 13.197 5l.963.875-5.364 5.565a1.164 1.164 0 0 1-1.636 0L1.875 5.945l.945-.901Z"
-              ></path>
-            </svg>
-          </div>
-          <div class="fourth-section-price">
-            <label for="input-price"> </label>
-            <span class="written-price">Prezzo</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              role="presentation"
-              focusable="false"
-              fill="#999"          
-              viewBox="0 0 16 16"
-              class="icon-marca"
-              width="25"
-              height="35"
-            >
-              <path
-                d="M2.82 5.044 8 10.399 13.197 5l.963.875-5.364 5.565a1.164 1.164 0 0 1-1.636 0L1.875 5.945l.945-.901Z"
-              ></path>
-            </svg>
-          </div>
+
+<!-- TAGLIA -->
+<button type="button" class="first-filter-size" data-filter="size">
+  <span class="written-size">Taglia</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    role="presentation"
+    focusable="false"
+    fill="#999"
+    viewBox="0 0 16 16"
+    class="icon-size"
+    width="25"
+    height="35"
+  >
+    <path
+      d="M2.82 5.044 8 10.399 13.197 5l.963.875-5.364 5.565a1.164 1.164 0 0 1-1.636 0L1.875 5.945l.945-.901Z"
+    ></path>
+  </svg>
+</button>
+
+<div class="filter-panel menu-filter-size" data-panel="size">
+  <select name="select-size" class="select-size">
+    <option>Taglie standard</option>
+    <option>Taglie pantaloni</option>
+  </select>
+  <ul class="list-size">
+  <li><input type="checkbox" class="filter-size" value="xs"> XS</li>
+  <li><input type="checkbox" class="filter-size" value="s"> S</li>
+  <li><input type="checkbox" class="filter-size" value="m"> M</li>
+  <li><input type="checkbox" class="filter-size" value="l"> L</li>
+  <li><input type="checkbox" class="filter-size" value="xl"> XL</li>
+  <li><input type="checkbox" class="filter-size" value="xxl"> XXL</li>
+  <li><input type="checkbox" class="filter-size" value="3xl"> 3XL</li>
+  <li><input type="checkbox" class="filter-size" value="4xl"> 4XL</li>
+  <li><input type="checkbox" class="filter-size" value="5xl"> 5XL</li>
+</ul>
+
+
+</div>
+
+
+
+<!-- COLORE -->
+<button type="button" class="second-section-color" data-filter="color">
+  <span class="written-color">Colore</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    role="presentation"
+    focusable="false"
+    fill="#999"
+    viewBox="0 0 16 16"
+    class="icon-color"
+    width="25"
+    height="35"
+  >
+    <path
+      d="M2.82 5.044 8 10.399 13.197 5l.963.875-5.364 5.565a1.164 1.164 0 0 1-1.636 0L1.875 5.945l.945-.901Z"
+    ></path>
+  </svg>
+</button>
+
+<div class="filter-panel" data-panel="color">
+  <label><input type="checkbox" class="filter-color" value="bianco">Bianco</label>
+  <label><input type="checkbox" class="filter-color" value="grigio">Grigio</label>
+  <label><input type="checkbox" class="filter-color" value="nero">Nero</label>
+  <label><input type="checkbox" class="filter-color" value="giallo">Giallo</label>
+  <label><input type="checkbox" class="filter-color" value="arancione">Arancione</label>
+  <label><input type="checkbox" class="filter-color" value="rosso">Rosso</label>
+  <label><input type="checkbox" class="filter-color" value="viola">Viola</label>
+  <label><input type="checkbox" class="filter-color" value="blu">Blu</label>
+  <label><input type="checkbox" class="filter-color" value="marrone">Marrone</label>
+  <label><input type="checkbox" class="filter-color" value="mix">Mix</label>
+
+</div>
+
+
+<!-- MARCA -->
+<button type="button" class="third-section-marca" data-filter="brand">
+  <span class="written-marca">Marca</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    role="presentation"
+    focusable="false"
+    fill="#999"
+    viewBox="0 0 16 16"
+    class="icon-marca"
+    width="25"
+    height="35"
+  >
+    <path
+      d="M2.82 5.044 8 10.399 13.197 5l.963.875-5.364 5.565a1.164 0 0 1-1.636 0L1.875 5.945l.945-.901Z"
+    ></path>
+  </svg>
+</button>
+
+<div class="filter-panel" data-panel="brand">
+  <input type="text" placeholder="Cerca per Marca">
+
+  <ul class="menu-filter-marca">
+    <li>
+      <label>
+        <input type="checkbox" value="banned">
+        <span>Banned Alternative</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" value="goodyear">
+        <span>GoodYear</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" value="heartless">
+        <span>Heartless</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" value="classic">
+        <span>Classic</span>
+      </label>
+    </li>
+  </ul>
+</div>
+
+
+<!-- PREZZO -->
+<button type="button" class="fourth-section-price" data-filter="price">
+  <span class="written-price">Prezzo</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    role="presentation"
+    focusable="false"
+    fill="#999"
+    viewBox="0 0 16 16"
+    class="icon-price"
+    width="25"
+    height="35"
+  >
+    <path
+      d="M2.82 5.044 8 10.399 13.197 5l.963.875-5.364 5.565a1.164 0 0 1-1.636 0L1.875 5.945l.945-.901Z"
+    ></path>
+  </svg>
+</button>
+<div class="filter-panel" data-panel="price">
+  <div class="price-slider-wrapper">
+    <input
+      type="range"
+      min="0"
+      max="500"
+      value="250"
+      step="5"
+      id="priceRange"
+      class="filter-price"
+    />
+    <span id="priceValue">250 €</span>
+  </div>
+</div>
+
         </div>
         <div class="section-filter">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#000000" d="M9 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2zM6.17 5a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-7.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 0 1 0-2h1.17zM15 11a1 1 0 1 0 0 2a1 1 0 0 0 0-2zm-2.83 0a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-1.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 1 1 0-2h7.17zM9 17a1 1 0 1 0 0 2a1 1 0 0 0 0-2zm-2.83 0a3.001 3.001 0 0 1 5.66 0H19a1 1 0 1 1 0 2h-7.17a3.001 3.001 0 0 1-5.66 0H5a1 1 0 1 1 0-2h1.17z" class="image-filter"/></svg>
