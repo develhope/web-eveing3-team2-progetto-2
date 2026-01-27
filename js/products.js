@@ -1,5 +1,5 @@
 // array di oggetti dei vari prodotti
-
+// da aggiungere altre chiavi per i filtri come il colore
 const prodottiOriginali = [
   {
     id: 1,
