@@ -238,6 +238,12 @@ function applicaFiltri() {
 
   //aggiungere altro ciclo if inverso a quello sopra per poter filtrare dal prezzo più alto
 
+  if (filtriAttivi.prezzoMax !== null) {
+    prodottiFiltrati = prodottiFiltrati.filter(
+      (p) => p.prezzo <= filtriAttivi.prezzoMax,
+    );
+  }
+
   // mostra risultati dei prodotti filtrati
   mostraProdotti(prodottiFiltrati);
 }
