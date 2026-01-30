@@ -11,6 +11,7 @@ const filtriAttivi = {
   ricerca: null,
   colore: null,
   data_pubblicazione: null,
+  taglia: null,
 };
 
 // funzione per applicare più filtri contemporaneamente
@@ -35,6 +36,11 @@ function applicaFiltri() {
   // filtro prezzo max
   if (filtriAttivi.prezzoMax !== null) {
     prodottiFiltrati = prodottiFiltrati.filter((p) => p.prezzo <= filtriAttivi.prezzoMax);
+  }
+
+  // filtro taglia
+  if (filtriAttivi.taglia !== null) {
+    prodottiFiltrati = prodottiFiltrati.filter((p) => p.taglia <= filtriAttivi.taglia);
   }
 
   //aggiungere altro ciclo if inverso a quello sopra per poter filtrare dal prezzo più alto
@@ -82,3 +88,7 @@ const selector = document.getElementById("filtro-categoria");
 // DA METTERE TAG VUOTO PER IL ROOT HTML PER JAVA
 
 // <div id="lista-prodotti"></div>;
+
+const btnFiltri = document.querySelectorAll(".filter-size");
+
+btnFiltri.addEventListener("click", applicaFiltri);
