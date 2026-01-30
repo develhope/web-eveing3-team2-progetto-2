@@ -6,7 +6,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw6ce0a8c8/images/4/4/8/0/448074a.jpg?sw=350&sh=400&sm=fit&sfrm=png",
     stato: "Esclusiva",
-    taglia: "Taglia Extra",
+    taglia: "L",
     prezzo: 75.99,
     nome: "EMP Signature Collection",
     brand: "Slipknot",
@@ -18,7 +18,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwdc2f42ba/images/5/9/2/3/592324a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "Quasi esaurito",
-    taglia: "Anche in Taglie Forti",
+    taglia: "S",
     prezzo: 19.99,
     nome: "Hellraiser - Ozzy & Lemmy",
     brand: "Ozzy Osbourne",
@@ -30,7 +30,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw1b2f640e/images/3/9/7/1/397124a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "Premium",
-    taglia: "Anche in Taglie Forti",
+    taglia: "XS",
     prezzo: 323.99,
     nome: "EMP Signature Collection",
     brand: "Slipknot",
@@ -42,7 +42,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw2630f6af/images/5/6/0/2/560285.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "Esclusiva",
-    taglia: "",
+    taglia: "XL",
     prezzo: 539.99,
     nome: "Nixon - 51-30",
     brand: "The Rolling Stones",
@@ -54,7 +54,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwc2eedf77/images/3/4/3/0/343005.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "",
-    taglia: "Anche in Taglie Forti",
+    taglia: "XXL",
     prezzo: 269.99,
     nome: "Rock & Roll - Will Never Die",
     brand: "AC-DC",
@@ -66,7 +66,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw5a8d907c/images/3/6/9/7/369707a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "",
-    taglia: "Anche in Taglie Forti",
+    taglia: "M",
     prezzo: 19.99,
     nome: "...And Justice For All - Tracklist",
     brand: "Metallica",
@@ -78,7 +78,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw66b6d349/images/5/7/1/9/571994a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "",
-    taglia: "Anche in Taglie Forti",
+    taglia: "M",
     prezzo: 75.99,
     nome: "EMP Signature Collection",
     brand: "Electric Callboy",
@@ -90,7 +90,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw35883168/images/5/8/2/4/582485a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "",
-    taglia: "Anche in Taglie Forti",
+    taglia: "XL",
     prezzo: 19.99,
     nome: "EMP Signature Collection",
     brand: "Five Finger Death Punch",
@@ -102,7 +102,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw5be4f4f3/images/5/8/7/9/587970a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "Dettagli in metallo",
-    taglia: "",
+    taglia: "L",
     prezzo: 75.99,
     nome: "Men's Harland Top",
     brand: "Heartless",
@@ -114,7 +114,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw55e4fcf4/images/5/8/8/7/588756a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "Esclusiva",
-    taglia: "Ricamato",
+    taglia: "M",
     prezzo: 43.99,
     nome: "Lost Souls",
     brand: "Rock Rebel by EMP",
@@ -126,7 +126,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwf4578047/images/5/8/8/6/588646a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "Esclusiva",
-    taglia: "",
+    taglia: "S",
     prezzo: 10.99,
     nome: "Built For Comfort",
     brand: "RED by EMP",
@@ -138,7 +138,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwf5ded4a2/images/5/8/8/5/588597a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "Esclusiva",
-    taglia: "Ricamato",
+    taglia: "L",
     prezzo: 43.99,
     nome: "Megan",
     brand: "RED by EMP",
@@ -150,7 +150,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw20497392/images/5/9/5/4/595473a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "Stampa Speciale",
-    taglia: "",
+    taglia: "M",
     prezzo: 24.99,
     nome: "Batman Logo FlockPrint",
     brand: "Batman",
@@ -162,7 +162,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw823d78e7/images/5/9/6/4/596427a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "Premium",
-    taglia: "Anche in Taglie Forti",
+    taglia: "S",
     prezzo: 19.99,
     nome: "Nekomata",
     brand: "Pinku Kult",
@@ -174,7 +174,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw05a2cf43/images/5/8/4/5/584537a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "Destroyed Look",
-    taglia: "Aperture",
+    taglia: "XS",
     prezzo: 48.99,
     nome: "Kara Vex Jumper",
     brand: "Banned",
@@ -186,7 +186,7 @@ const prodottiOriginali = [
     immagine:
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw6e311774/images/5/8/8/9/588939a.jpg?sw=255&sh=250&sm=fit&sfrm=png",
     stato: "Esclusiva",
-    taglia: "Ricamato",
+    taglia: "XL",
     prezzo: 26.99,
     nome: "Celtic Snake T-shirt",
     brand: "Black Premium by EMP",
@@ -196,52 +196,8 @@ const prodottiOriginali = [
 ];
 
 function formatPrice(price) {
-  return price.replace(".", ",") + " €";
+  return String(price).replace(".", ",") + " €";
 }
-
-function formatPrice(price) {
-  return price.replace(".", "," + "€");
-}
-
-// ARRAY PER I FILTRI - Copia dell'array originale
-let prodottiFiltrati = [...prodottiOriginali];
-
-// Oggetto filtri che tiene traccia di quali filtri sono statii  applicati per poterne applicare di più contemporaneamente
-const filtriAttivi = {
-  categoria: null,
-  brand: null,
-  prezzoMin: null,
-  prezzoMax: null,
-  ricerca: null,
-};
-
-// funzione per applicare più filtri comntemporaneamnete
-function applicaFiltri() {
-  // Inizia sempre dall'array originale
-  prodottiFiltrati = [...prodottiOriginali];
-
-  // filtro per categoria
-  if (filtriAttivi.categoria && filtriAttivi.categoria !== "tutti") {
-    prodottiFiltrati = prodottiFiltrati.filter(
-      (p) => p.categoria === filtriAttivi.categoria,
-    );
-  }
-
-  // aggiungere aaltri cicli if come quello sopra per altri filtri come brand;
-
-  // filtrp per prezzo minimo
-  if (filtriAttivi.prezzoMin !== null) {
-    prodottiFiltrati = prodottiFiltrati.filter(
-      (p) => p.prezzo >= filtriAttivi.prezzoMin,
-    );
-  }
-
-  //aggiungere altro ciclo if inverso a quello sopra per poter filtrare dal prezzo più alto
-
-  // mostra risultati dei prodotti filtrati
-  mostraProdotti(prodottiFiltrati);
-}
-// Per visualizzarli nel tuo index.html, dovresti avere un contenitore vuoto (es. <div id="lista-prodotti"></div>). In JS, usi un ciclo per generare l'HTML:
 
 const contenitore = document.getElementById("lista-prodotti");
 
@@ -249,73 +205,29 @@ function mostraProdotti(arrayDati) {
   // svuota il contenitore prima di stampare
   contenitore.innerHTML = "";
 
-  arrayDati.forEach((prodotto) => {
+  arrayDati.forEach(({ immagine, nome, stato, taglia, prezzo, brand, categoria }) => {
     contenitore.innerHTML += `
       <article class="tessera-shop">
         <button class="tasto-carrello" aria-label="Aggiungi al carrello">
           <span class="icona-carrello">🛒</span>
         </button>
         <a class="frame-foto" href="#">
-          <img class="foto-prodotto" src="${prodotto.immagine}" alt="${prodotto.nome}" />
+          <img class="foto-prodotto" src="${immagine}" alt="${nome}" />
         </a>
         <div class="riga-etichette">
-          <span class="etichetta-grigia">${prodotto.stato}</span>
-          <span class="etichetta-grigia">${prodotto.taglia}</span>
+          <span class="etichetta-grigia">${stato}</span>
+          <span class="etichetta-grigia">${taglia}</span>
         </div>
         <div class="riga-prezzo">
-          <span class="prezzo-secco">${prodotto.prezzo}</span>
+          <span class="prezzo-secco">${formatPrice(prezzo)}</span>
         </div>
-        <h3 class="titolo-prodotto">${prodotto.nome}</h3>
+        <h3 class="titolo-prodotto">${nome}</h3>
         <p class="briciole-brand">
-          ${prodotto.brand} <span class="slash">/</span>${prodotto.categoria}
+          ${brand} <span class="slash">/</span>${categoria}
         </p>
       </article>`;
   });
 }
 
 // chiamata iniziale per vedere tutti i prodotti
-mostraProdotti(prodottiFiltrati);
-
-// da aggiungere funzioni per poter impostare filtri per Categroia, brand, colore, prezzo minimo e massimo,
-// filtro ricerca e reset dei filtri
-
-// Es. Come funziona il sistema di filtro
-// Il filtraggio si basa sul metodo JavaScript .filter(). Questo metodo crea un nuovo array che contiene solo gli elementi che soddisfano una determinata condizione.
-
-// Esempio: Filtrare per Categoria
-// Se volessi vedere solo i prodotti della categoria "Elettronica":
-
-//const prodottiFiltrati = prodotti.filter((prodotto) => {
-//  return prodotto.categoria === "Elettronica";
-//});
-
-// Poi passi l'array filtrato alla funzione che stampa l'HTML
-// mostraProdotti(prodottiFiltrati);
-
-// Rendiamolo dinamico (Interazione utente)
-// Immagina di avere una select nel tuo HTML per scegliere la categoria:
-
-//const selector = document.getElementById("filtro-categoria");
-
-/* selector.addEventListener("change", (event) => {
-  const valoreScelto = event.target.value;
-
-  if (valoreScelto === "tutti") {
-    // mostraProdotti(prodotti);
-  } else {
-    const filtrati = prodotti.filter((p) => p.categoria === valoreScelto);
-    // mostraProdotti(filtrati);
-  }
-});
-*/
-// Riassunto del meccanismo
-// Dati: Hai un array originale (prodotti) che non viene mai modificato.
-
-// Azione: L'utente interagisce con un filtro (bottone o input).
-
-// Logica: Usi .filter() sul array originale per generare una "copia ridotta".
-
-// Render: Chiami la funzione che disegna l'HTML passandole solo i dati filtrati.
-
-// // DA METTERE TAG VUOTO PER IL ROOT HTML PER JAVA
-// <div id="lista-prodotti"></div>;
+mostraProdotti(prodottiOriginali);
