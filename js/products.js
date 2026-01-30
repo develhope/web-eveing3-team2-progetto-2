@@ -7,7 +7,7 @@ const prodotti = [
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw6ce0a8c8/images/4/4/8/0/448074a.jpg?sw=350&sh=400&sm=fit&sfrm=png",
     stato: "Esclusiva",
     taglia: "Taglia Extra",
-    prezzo: "75.99 €",
+    prezzo: 75.99,
     nome: "EMP Signature Collection",
     brand: "Slipknot",
     categoria: "Felpa jogging",
@@ -179,6 +179,10 @@ const prodotti = [
   },
 ];
 
+function formatPrice(price) {
+  return price.replace(".", ",") + " €";
+}
+
 // Per visualizzarli nel tuo index.html, dovresti avere un contenitore vuoto (es. <div id="lista-prodotti"></div>). In JS, usi un ciclo per generare l'HTML:
 
 const contenitore = document.getElementById("lista-prodotti");
@@ -201,7 +205,8 @@ function mostraProdotti(arrayDati) {
           <span class="etichetta-grigia">${prodotto.taglia}</span>
         </div>
         <div class="riga-prezzo">
-          <span class="prezzo-secco">${prodotto.prezzo}</span>
+          <span class="prezzo-secco">${formatPrice(prodotto.prezzo)}</span>
+          
         </div>
         <h3 class="titolo-prodotto">${prodotto.nome}</h3>
         <p class="briciole-brand">
@@ -225,7 +230,7 @@ const prodottiFiltrati = prodotti.filter((prodotto) => {
 });
 
 // Poi passi l'array filtrato alla funzione che stampa l'HTML
-mostraProdotti(prodottiFiltrati);
+// mostraProdotti(prodottiFiltrati);
 
 // Rendiamolo dinamico (Interazione utente)
 // Immagina di avere una select nel tuo HTML per scegliere la categoria:
