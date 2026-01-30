@@ -7,7 +7,7 @@ const prodottiOriginali = [
       "https://www.emp-online.it/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw6ce0a8c8/images/4/4/8/0/448074a.jpg?sw=350&sh=400&sm=fit&sfrm=png",
     stato: "Esclusiva",
     taglia: "Taglia Extra",
-    prezzo: "75.99 €",
+    prezzo: 75.99,
     nome: "EMP Signature Collection",
     brand: "Slipknot",
     categoria: "Felpa jogging",
