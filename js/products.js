@@ -217,13 +217,12 @@ function formatPrice(price) {
 
 const contenitore = document.getElementById("lista-prodotti");
 
-function mostraProdotti(arrayDati) {
+export function mostraProdotti(arrayDati) {
   // svuota il contenitore prima di stampare
   contenitore.innerHTML = "";
 
-  arrayDati.forEach(
-    ({ immagine, nome, stato, taglia, prezzo, brand, categoria }) => {
-      contenitore.innerHTML += `
+  arrayDati.forEach(({ immagine, nome, stato, taglia, prezzo, brand, categoria }) => {
+    contenitore.innerHTML += `
       <article class="tessera-shop">
         <button class="tasto-carrello" aria-label="Aggiungi al carrello">
           <span class="icona-carrello">🛒</span>
@@ -243,8 +242,7 @@ function mostraProdotti(arrayDati) {
           ${brand} <span class="slash">/</span>${categoria}
         </p>
       </article>`;
-    },
-  );
+  });
 }
 
 // chiamata iniziale per vedere tutti i prodotti

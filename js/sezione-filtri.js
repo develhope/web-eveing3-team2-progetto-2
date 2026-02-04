@@ -1,8 +1,6 @@
 // ARRAY PER I FILTRI - Copia dell'array originale
 import "./products.js";
-import { prodottiOriginali } from "./products.js";
-
-let prodottiFiltrati = [...prodottiOriginali];
+import { prodottiOriginali, mostraProdotti } from "./products.js";
 
 // Oggetto filtri che tiene traccia di quali filtri sono stati  applicati per poterne applicare di più contemporaneamente
 const filtriAttivi = {
@@ -18,48 +16,37 @@ const filtriAttivi = {
 
 // funzione per applicare più filtri contemporaneamente
 function applicaFiltri() {
+  let prodottiFiltrati = [...prodottiOriginali];
   // Inizia sempre dell'array originale
 
   // filtro brand
   if (filtriAttivi.brand && filtriAttivi.brand !== "tutti") {
-    prodottiFiltrati = prodottiFiltrati.filter(
-      (p) => p.brand === filtriAttivi.brand,
-    );
+    prodottiFiltrati = prodottiFiltrati.filter((p) => p.brand === filtriAttivi.brand);
   }
   // filtro per categoria
   if (filtriAttivi.categoria && filtriAttivi.categoria !== "tutti") {
-    prodottiFiltrati = prodottiFiltrati.filter(
-      (p) => p.categoria === filtriAttivi.categoria,
-    );
+    prodottiFiltrati = prodottiFiltrati.filter((p) => p.categoria === filtriAttivi.categoria);
   }
 
   // aggiungere altri cicli if come quello sopra per altri filtri come brand;
 
   // filtro per prezzo minimo
   if (filtriAttivi.prezzoMin !== null) {
-    prodottiFiltrati = prodottiFiltrati.filter(
-      (p) => p.prezzo >= filtriAttivi.prezzoMin,
-    );
+    prodottiFiltrati = prodottiFiltrati.filter((p) => p.prezzo >= filtriAttivi.prezzoMin);
   }
   // filtro prezzo max
   if (filtriAttivi.prezzoMax !== null) {
-    prodottiFiltrati = prodottiFiltrati.filter(
-      (p) => p.prezzo <= filtriAttivi.prezzoMax,
-    );
+    prodottiFiltrati = prodottiFiltrati.filter((p) => p.prezzo <= filtriAttivi.prezzoMax);
   }
 
   // filtro taglia
   if (filtriAttivi.taglia !== null) {
-    prodottiFiltrati = prodottiFiltrati.filter(
-      (p) => p.taglia <= filtriAttivi.taglia,
-    );
+    prodottiFiltrati = prodottiFiltrati.filter((p) => p.taglia <= filtriAttivi.taglia);
   }
 
   //filtro colore
   if (filtriAttivi.colore !== null) {
-    prodottiFiltrati = prodottiFiltrati.filter(
-      (p) => p.colore === filtriAttivi.colore,
-    );
+    prodottiFiltrati = prodottiFiltrati.filter((p) => p.colore === filtriAttivi.colore);
   }
 
   //filtro data_pubblicazione
@@ -95,8 +82,6 @@ function applicaFiltri() {
 // Rendiamolo dinamico (Interazione utente)
 // Immagina di avere una select nel tuo HTML per scegliere la categoria:
 
-const selector = document.getElementById("filtro-categoria");
-
 /* selector.addEventListener("change", (event) => {
   const valoreScelto = event.target.value;
 
@@ -122,9 +107,37 @@ const selector = document.getElementById("filtro-categoria");
 
 // <div id="lista-prodotti"></div>;
 
-const bottoneBianco = document.querySelector(".filter-color .bianco");
-bottoneBianco.addEventListener("change", () => {
-  filtriAttivi.colore = "bianco";
+// const bottoneBianco = document.querySelector(".filter-color .bianco");
+// bottoneBianco.addEventListener("change", () => {
+//   filtriAttivi.colore = "bianco";
 
-  applicaFiltri();
+//   applicaFiltri();
+// });
+
+// ===== LISTENER PER I COLORI =====
+const checkboxColori = document.querySelectorAll('input[type="checkbox"].filter-color');
+
+checkboxColori.forEach((checkbox) => {
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      filtriAttivi.colore = checkbox.value;
+    } else {
+      filtriAttivi.colore = null;
+    }
+    applicaFiltri();
+  });
+});
+
+// ===== LISTENER PER LE TAGLIE =====
+const checkboxTaglie = document.querySelectorAll('input[type="checkbox"].filter-size');
+
+checkboxTaglie.forEach((checkbox) => {
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      filtriAttivi.taglia = checkbox.value;
+    } else {
+      filtriAttivi.taglia = null;
+    }
+    applicaFiltri();
+  });
 });
