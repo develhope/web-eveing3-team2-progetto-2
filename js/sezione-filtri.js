@@ -12,6 +12,7 @@ const filtriAttivi = {
   colore: null,
   data_pubblicazione: null,
   taglia: null,
+  colori: null,
 };
 
 // funzione per applicare più filtri contemporaneamente
@@ -20,27 +21,44 @@ function applicaFiltri() {
 
   // filtro brand
   if (filtriAttivi.brand && filtriAttivi.brand !== "tutti") {
-    prodottiFiltrati = prodottiFiltrati.filter((p) => p.brand === filtriAttivi.brand);
+    prodottiFiltrati = prodottiFiltrati.filter(
+      (p) => p.brand === filtriAttivi.brand,
+    );
   }
   // filtro per categoria
   if (filtriAttivi.categoria && filtriAttivi.categoria !== "tutti") {
-    prodottiFiltrati = prodottiFiltrati.filter((p) => p.categoria === filtriAttivi.categoria);
+    prodottiFiltrati = prodottiFiltrati.filter(
+      (p) => p.categoria === filtriAttivi.categoria,
+    );
   }
 
   // aggiungere altri cicli if come quello sopra per altri filtri come brand;
 
   // filtro per prezzo minimo
   if (filtriAttivi.prezzoMin !== null) {
-    prodottiFiltrati = prodottiFiltrati.filter((p) => p.prezzo >= filtriAttivi.prezzoMin);
+    prodottiFiltrati = prodottiFiltrati.filter(
+      (p) => p.prezzo >= filtriAttivi.prezzoMin,
+    );
   }
   // filtro prezzo max
   if (filtriAttivi.prezzoMax !== null) {
-    prodottiFiltrati = prodottiFiltrati.filter((p) => p.prezzo <= filtriAttivi.prezzoMax);
+    prodottiFiltrati = prodottiFiltrati.filter(
+      (p) => p.prezzo <= filtriAttivi.prezzoMax,
+    );
   }
 
   // filtro taglia
   if (filtriAttivi.taglia !== null) {
-    prodottiFiltrati = prodottiFiltrati.filter((p) => p.taglia <= filtriAttivi.taglia);
+    prodottiFiltrati = prodottiFiltrati.filter(
+      (p) => p.taglia <= filtriAttivi.taglia,
+    );
+  }
+
+  //filtro colore
+  if (filtriAttivi.colore !== null) {
+    prodottiFiltrati = prodottiFiltrati.filter(
+      (p) => p.colore === filtriAttivi.colore,
+    );
   }
 
   //aggiungere altro ciclo if inverso a quello sopra per poter filtrare dal prezzo più alto
