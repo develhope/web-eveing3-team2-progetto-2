@@ -12,6 +12,7 @@ const prodottiOriginali = [
     brand: "Slipknot",
     categoria: "Felpa jogging",
     data_pubblicazione: "25/10/2025",
+    colore: "rosso",
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const prodottiOriginali = [
     brand: "Ozzy Osbourne",
     categoria: "T-Shirt",
     data_pubblicazione: "17/02/2024",
+    colore: "grigio",
   },
   {
     id: 3,
@@ -36,6 +38,7 @@ const prodottiOriginali = [
     brand: "Slipknot",
     categoria: "Giacca di pelle",
     data_pubblicazione: "1/08/2025",
+    colore: "nero",
   },
   {
     id: 4,
@@ -48,6 +51,7 @@ const prodottiOriginali = [
     brand: "The Rolling Stones",
     categoria: "Orologi da polso",
     data_pubblicazione: "10/03/2023",
+    colore: "giallo",
   },
   {
     id: 5,
@@ -60,6 +64,7 @@ const prodottiOriginali = [
     brand: "AC-DC",
     categoria: "Giacca di pelle",
     data_pubblicazione: "11/09/2024",
+    colore: "nero",
   },
   {
     id: 6,
@@ -72,6 +77,7 @@ const prodottiOriginali = [
     brand: "Metallica",
     categoria: "T-Shirt",
     data_pubblicazione: "30/07/2025",
+    colore: "grigio",
   },
   {
     id: 7,
@@ -84,6 +90,7 @@ const prodottiOriginali = [
     brand: "Electric Callboy",
     categoria: "Felpa jogging",
     data_pubblicazione: "21/06/2025",
+    colore: "nero",
   },
   {
     id: 8,
@@ -96,6 +103,7 @@ const prodottiOriginali = [
     brand: "Five Finger Death Punch",
     categoria: "T-Shirt",
     data_pubblicazione: "17/10/2023",
+    colore: "grigio",
   },
   {
     id: 9,
@@ -108,6 +116,7 @@ const prodottiOriginali = [
     brand: "Heartless",
     categoria: "Maglia a maniche lunghe",
     data_pubblicazione: "09/09/2024",
+    colore: "grigio",
   },
   {
     id: 10,
@@ -120,6 +129,7 @@ const prodottiOriginali = [
     brand: "Rock Rebel by EMP",
     categoria: "Felpa",
     data_pubblicazione: "01/02/2025",
+    colore: "mix",
   },
   {
     id: 11,
@@ -132,6 +142,7 @@ const prodottiOriginali = [
     brand: "RED by EMP",
     categoria: "Leggings",
     data_pubblicazione: "04/12/2024",
+    colore: "grigio",
   },
   {
     id: 12,
@@ -144,6 +155,7 @@ const prodottiOriginali = [
     brand: "RED by EMP",
     categoria: "Jeans",
     data_pubblicazione: "09/11/2023",
+    colore: "grigio",
   },
   {
     id: 13,
@@ -156,6 +168,7 @@ const prodottiOriginali = [
     brand: "Batman",
     categoria: "T-Shirt",
     data_pubblicazione: "14/04/2024",
+    colore: "nero",
   },
   {
     id: 14,
@@ -168,6 +181,7 @@ const prodottiOriginali = [
     brand: "Pinku Kult",
     categoria: "T-Shirt",
     data_pubblicazione: "12/12/2025",
+    colore: "nero",
   },
   {
     id: 15,
@@ -180,6 +194,7 @@ const prodottiOriginali = [
     brand: "Banned",
     categoria: "Maglione",
     data_pubblicazione: "08/07/2025",
+    colore: "bianco",
   },
   {
     id: 16,
@@ -192,6 +207,7 @@ const prodottiOriginali = [
     brand: "Black Premium by EMP",
     categoria: "T-Shirt",
     data_pubblicazione: "13/06/2025",
+    colore: "nero",
   },
 ];
 
@@ -205,8 +221,9 @@ function mostraProdotti(arrayDati) {
   // svuota il contenitore prima di stampare
   contenitore.innerHTML = "";
 
-  arrayDati.forEach(({ immagine, nome, stato, taglia, prezzo, brand, categoria }) => {
-    contenitore.innerHTML += `
+  arrayDati.forEach(
+    ({ immagine, nome, stato, taglia, prezzo, brand, categoria }) => {
+      contenitore.innerHTML += `
       <article class="tessera-shop">
         <button class="tasto-carrello" aria-label="Aggiungi al carrello">
           <span class="icona-carrello">🛒</span>
@@ -226,7 +243,8 @@ function mostraProdotti(arrayDati) {
           ${brand} <span class="slash">/</span>${categoria}
         </p>
       </article>`;
-  });
+    },
+  );
 }
 
 // chiamata iniziale per vedere tutti i prodotti
