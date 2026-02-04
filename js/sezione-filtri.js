@@ -1,5 +1,6 @@
 // ARRAY PER I FILTRI - Copia dell'array originale
 import "./products.js";
+import { prodottiOriginali } from "./products.js";
 
 let prodottiFiltrati = [...prodottiOriginali];
 
@@ -12,7 +13,7 @@ const filtriAttivi = {
   colore: null,
   data_pubblicazione: null,
   taglia: null,
-  colori: null,
+  categoria: null,
 };
 
 // funzione per applicare più filtri contemporaneamente
@@ -58,6 +59,20 @@ function applicaFiltri() {
   if (filtriAttivi.colore !== null) {
     prodottiFiltrati = prodottiFiltrati.filter(
       (p) => p.colore === filtriAttivi.colore,
+    );
+  }
+
+  //filtro data_pubblicazione
+  if (filtriAttivi.data_pubblicazione !== null) {
+    prodottiFiltrati = prodottiFiltrati.filter(
+      (p) => p.data_pubblicazione >= filtriAttivi.data_pubblicazione,
+    );
+  }
+
+  //filtro data_pubblicazione
+  if (filtriAttivi.data_pubblicazione !== null) {
+    prodottiFiltrati = prodottiFiltrati.filter(
+      (p) => p.data_pubblicazione <= filtriAttivi.data_pubblicazione,
     );
   }
 
@@ -107,6 +122,9 @@ const selector = document.getElementById("filtro-categoria");
 
 // <div id="lista-prodotti"></div>;
 
-const btnFiltri = document.querySelectorAll(".filter-size");
+const bottoneBianco = document.querySelector(".filter-color .bianco");
+bottoneBianco.addEventListener("change", () => {
+  filtriAttivi.colore = "bianco";
 
-btnFiltri.addEventListener("click", applicaFiltri);
+  applicaFiltri();
+});

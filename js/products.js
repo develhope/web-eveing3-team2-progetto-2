@@ -1,6 +1,6 @@
 // array di oggetti dei vari prodotti
 // da aggiungere altre chiavi per i filtri come il colore
-const prodottiOriginali = [
+export const prodottiOriginali = [
   {
     id: 1,
     immagine:
