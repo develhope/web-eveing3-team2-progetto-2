@@ -123,3 +123,20 @@ checkboxBrand.forEach((checkbox) => {
     applicaFiltri();
   });
 });
+
+// ===== LISTENER PER IL PREZZO =====
+const priceRangeInput = document.getElementById("priceRange");
+const priceValueDisplay = document.getElementById("priceValue");
+
+priceRangeInput.addEventListener("input", () => {
+  const priceValue = priceRangeInput.value;
+
+  // Aggiorna il filtro prezzo massimo
+  filtriAttivi.prezzoMax = parseFloat(priceValue);
+
+  // Aggiorna il testo visualizzato
+  priceValueDisplay.textContent = priceValue + " €";
+
+  // Applica i filtri
+  applicaFiltri();
+});
