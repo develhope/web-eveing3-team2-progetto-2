@@ -70,52 +70,7 @@ function applicaFiltri() {
   mostraProdotti(prodottiFiltrati);
 }
 
-// da aggiungere funzioni per poter impostare filtri per Categoria, brand, colore, prezzo minimo e massimo,
-// filtro ricerca e reset dei filtri
-
-// Es. Come funziona il sistema di filtro
-// Il filtraggio si basa sul metodo JavaScript .filter(). Questo metodo crea un nuovo array che contiene solo gli elementi che soddisfano una determinata condizione.
-
-// Esempio: Filtrare per Categoria
-// Se volessi vedere solo i prodotti della categoria "Elettronica":
-// Poi passi l'array filtrato alla funzione che stampa l'HTML
-
-// Rendiamolo dinamico (Interazione utente)
-// Immagina di avere una select nel tuo HTML per scegliere la categoria:
-
-/* selector.addEventListener("change", (event) => {
-  const valoreScelto = event.target.value;
-
-  if (valoreScelto === "tutti") {
-    mostraProdotti(prodotti);
-  } else {
-    const filtrati = prodotti.filter((p) => p.categoria === valoreScelto);
-    mostraProdotti(filtrati);
-  }
-});
-*/
-
-// Riassunto del meccanismo
-// Dati: Hai un array originale (prodotti) che non viene mai modificato.
-
-// Azione: L'utente interagisce con un filtro (bottone o input).
-
-// Logica: Usi .filter() sul array originale per generare una "copia ridotta".
-
-// Render: Chiami la funzione che disegna l'HTML passandole solo i dati filtrati.
-
-// DA METTERE TAG VUOTO PER IL ROOT HTML PER JAVA
-
-// <div id="lista-prodotti"></div>;
-
-// const bottoneBianco = document.querySelector(".filter-color .bianco");
-// bottoneBianco.addEventListener("change", () => {
-//   filtriAttivi.colore = "bianco";
-
-//   applicaFiltri();
-// });
-
-// ===== LISTENER PER I COLORI =====
+// Listener dei colori
 const checkboxColori = document.querySelectorAll('input[type="checkbox"].filter-color');
 
 checkboxColori.forEach((checkbox) => {
@@ -126,14 +81,14 @@ checkboxColori.forEach((checkbox) => {
         filtriAttivi.colore.push(checkbox.value);
       }
     } else {
-      // Rimuovi il colore dall'array
+      // Rimuovi il colore dell'array
       filtriAttivi.colore = filtriAttivi.colore.filter((c) => c !== checkbox.value);
     }
     applicaFiltri();
   });
 });
 
-// ===== LISTENER PER LE TAGLIE =====
+// Listener delle taglie
 const checkboxTaglie = document.querySelectorAll('input[type="checkbox"].filter-size');
 
 checkboxTaglie.forEach((checkbox) => {
@@ -144,7 +99,7 @@ checkboxTaglie.forEach((checkbox) => {
         filtriAttivi.taglia.push(checkbox.value);
       }
     } else {
-      // Rimuovi la taglia dall'array
+      // Rimuovi la taglia dell'array
       filtriAttivi.taglia = filtriAttivi.taglia.filter((t) => t !== checkbox.value);
     }
     applicaFiltri();
