@@ -105,3 +105,21 @@ checkboxTaglie.forEach((checkbox) => {
     applicaFiltri();
   });
 });
+
+// ===== LISTENER PER I BRAND =====
+const checkboxBrand = document.querySelectorAll('input[type="checkbox"].filter-brand');
+
+checkboxBrand.forEach((checkbox) => {
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      // Aggiungi il brand all'array se non c'è già
+      if (!filtriAttivi.brand.includes(checkbox.value)) {
+        filtriAttivi.brand.push(checkbox.value);
+      }
+    } else {
+      // Rimuovi il brand dell'array
+      filtriAttivi.brand = filtriAttivi.brand.filter((b) => b !== checkbox.value);
+    }
+    applicaFiltri();
+  });
+});
