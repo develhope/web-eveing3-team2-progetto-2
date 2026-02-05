@@ -132,7 +132,7 @@ priceRangeInput.addEventListener("input", () => {
   const priceValue = priceRangeInput.value;
 
   // Aggiorna il filtro prezzo massimo
-  filtriAttivi.prezzoMax = parseFloat(priceValue);
+  filtriAttivi.prezzoMax = parseFloat(priceValue); // trasforma il valore della stringa in un valore numerico
 
   // Aggiorna il testo visualizzato
   priceValueDisplay.textContent = priceValue + " €";

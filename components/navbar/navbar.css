@@ -32,6 +32,11 @@
   border: none;
 }
 
+.logo {
+  max-width: 200px;
+  min-height: 50px;
+}
+
 .icon-navbar {
   width: 115px;
   height: 40px;
@@ -42,7 +47,12 @@
   font-size: 14px;
 }
 
+.club > img {
+  margin-top: 300px;
+}
+
 .look {
+  background-color: black;
   width: 30px;
 }
 
@@ -62,7 +72,6 @@
 
 .dropdown-container {
   position: relative;
-  border: 1px solid blue;
 }
 
 .main-menu ul {
@@ -85,23 +94,32 @@
 
 .dropdown-menu {
   background-color: #fff;
-  border-bottom: 1px solid #ddd;
   position: absolute;
   display: flex;
-  gap: 20px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid #ddd;
+  box-shadow: #000;
 }
-.menu-section-abbigliamento h3 {
-  text-align: center;
+.menu-section > h3 {
+  text-align: left;
+  padding-left: 40px;
 }
 
 .menu-section {
   display: flex;
   flex-direction: column;
-  border: 1px solid grey;
+  border-right: 1px solid #ddd;
 }
 
-.menu-section a {
-  text-decoration: none;
+.abbigliamento,
+.accessori,
+.living,
+.highlights {
+  width: 379px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .highlights img {
