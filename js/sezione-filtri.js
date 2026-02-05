@@ -24,9 +24,11 @@ function applicaFiltri() {
     prodottiFiltrati = prodottiFiltrati.filter((p) => filtriAttivi.brand.includes(p.brand));
   }
 
-  // filtro per categoria
+  // filtro per categoria (supporta corrispondenza parziale e case-insensitive)
   if (filtriAttivi.categoria.length > 0) {
-    prodottiFiltrati = prodottiFiltrati.filter((p) => filtriAttivi.categoria.includes(p.categoria));
+    prodottiFiltrati = prodottiFiltrati.filter((p) =>
+      filtriAttivi.categoria.some((cat) => p.categoria.toLowerCase().includes(cat.toLowerCase())),
+    );
   }
 
   // aggiungere altri cicli if come quello sopra per altri filtri come brand;
@@ -140,3 +142,20 @@ priceRangeInput.addEventListener("input", () => {
   // Applica i filtri
   applicaFiltri();
 });
+
+// Listener per la select categoria
+const selectCategoria = document.querySelector(".select-size");
+if (selectCategoria) {
+  selectCategoria.addEventListener("change", () => {
+    const val = selectCategoria.value;
+    // se selezionato "Tutti" o stringa vuota, rimuovi il filtro
+    if (!val || val.trim() === "" || val.includes("Tutti")) {
+      filtriAttivi.categoria = [];
+    } else {
+      // estrai la parte dopo ':' se presente (es. "Categoria: Felpa")
+      const category = val.includes(":") ? val.split(":")[1].trim() : val.trim();
+      filtriAttivi.categoria = [category];
+    }
+    applicaFiltri();
+  });
+}
