@@ -52,21 +52,25 @@ function applicaFiltri() {
     prodottiFiltrati = prodottiFiltrati.filter((p) => filtriAttivi.colore.includes(p.colore));
   }
 
-  //filtro data_pubblicazione
-  if (filtriAttivi.data_pubblicazione !== null) {
-    prodottiFiltrati = prodottiFiltrati.filter(
-      (p) => p.data_pubblicazione >= filtriAttivi.data_pubblicazione,
-    );
+  // Ordina per data di pubblicazione (dal più recente al meno recente)
+  function parseDateString(d) {
+    if (!d) return new Date(0);
+    const parts = d.split("/");
+    const day = parseInt(parts[0], 10);
+    const month = parseInt(parts[1], 10) - 1;
+    const year = parseInt(parts[2], 10);
+    return new Date(year, month, day);
   }
 
-  //filtro data_pubblicazione
-  if (filtriAttivi.data_pubblicazione !== null) {
-    prodottiFiltrati = prodottiFiltrati.filter(
-      (p) => p.data_pubblicazione <= filtriAttivi.data_pubblicazione,
+  if (filtriAttivi.data_pubblicazione === "desc") {
+    prodottiFiltrati.sort(
+      (a, b) => parseDateString(b.data_pubblicazione) - parseDateString(a.data_pubblicazione),
+    );
+  } else if (filtriAttivi.data_pubblicazione === "asc") {
+    prodottiFiltrati.sort(
+      (a, b) => parseDateString(a.data_pubblicazione) - parseDateString(b.data_pubblicazione),
     );
   }
-
-  //aggiungere altro ciclo if inverso a quello sopra per poter filtrare dal prezzo più alto
 
   // mostra risultati dei prodotti filtrati
   mostraProdotti(prodottiFiltrati);
@@ -158,4 +162,19 @@ if (selectCategoria) {
     }
     applicaFiltri();
   });
+
+  // Listener per l'opzione di ordinamento (Data di pubblicazione)
+  const sortingSelect = document.getElementById("sorting");
+  if (sortingSelect) {
+    sortingSelect.addEventListener("change", () => {
+      const v = sortingSelect.value;
+      if (v && v.includes("Data di pubblicazione")) {
+        // imposta ordinamento dal più recente al meno recente
+        filtriAttivi.data_pubblicazione = "desc";
+      } else {
+        filtriAttivi.data_pubblicazione = null;
+      }
+      applicaFiltri();
+    });
+  }
 }
