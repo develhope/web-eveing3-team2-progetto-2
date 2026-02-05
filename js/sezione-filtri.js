@@ -24,9 +24,11 @@ function applicaFiltri() {
     prodottiFiltrati = prodottiFiltrati.filter((p) => filtriAttivi.brand.includes(p.brand));
   }
 
-  // filtro per categoria
+  // filtro per categoria (supporta corrispondenza parziale e case-insensitive)
   if (filtriAttivi.categoria.length > 0) {
-    prodottiFiltrati = prodottiFiltrati.filter((p) => filtriAttivi.categoria.includes(p.categoria));
+    prodottiFiltrati = prodottiFiltrati.filter((p) =>
+      filtriAttivi.categoria.some((cat) => p.categoria.toLowerCase().includes(cat.toLowerCase())),
+    );
   }
 
   // aggiungere altri cicli if come quello sopra per altri filtri come brand;
@@ -50,21 +52,25 @@ function applicaFiltri() {
     prodottiFiltrati = prodottiFiltrati.filter((p) => filtriAttivi.colore.includes(p.colore));
   }
 
-  //filtro data_pubblicazione
-  if (filtriAttivi.data_pubblicazione !== null) {
-    prodottiFiltrati = prodottiFiltrati.filter(
-      (p) => p.data_pubblicazione >= filtriAttivi.data_pubblicazione,
-    );
+  // Ordina per data di pubblicazione (dal più recente al meno recente)
+  function parseDateString(d) {
+    if (!d) return new Date(0);
+    const parts = d.split("/");
+    const day = parseInt(parts[0], 10);
+    const month = parseInt(parts[1], 10) - 1;
+    const year = parseInt(parts[2], 10);
+    return new Date(year, month, day);
   }
 
-  //filtro data_pubblicazione
-  if (filtriAttivi.data_pubblicazione !== null) {
-    prodottiFiltrati = prodottiFiltrati.filter(
-      (p) => p.data_pubblicazione <= filtriAttivi.data_pubblicazione,
+  if (filtriAttivi.data_pubblicazione === "desc") {
+    prodottiFiltrati.sort(
+      (a, b) => parseDateString(b.data_pubblicazione) - parseDateString(a.data_pubblicazione),
+    );
+  } else if (filtriAttivi.data_pubblicazione === "asc") {
+    prodottiFiltrati.sort(
+      (a, b) => parseDateString(a.data_pubblicazione) - parseDateString(b.data_pubblicazione),
     );
   }
-
-  //aggiungere altro ciclo if inverso a quello sopra per poter filtrare dal prezzo più alto
 
   // mostra risultati dei prodotti filtrati
   mostraProdotti(prodottiFiltrati);
@@ -132,7 +138,7 @@ priceRangeInput.addEventListener("input", () => {
   const priceValue = priceRangeInput.value;
 
   // Aggiorna il filtro prezzo massimo
-  filtriAttivi.prezzoMax = parseFloat(priceValue);
+  filtriAttivi.prezzoMax = parseFloat(priceValue); // trasforma il valore della stringa in un valore numerico
 
   // Aggiorna il testo visualizzato
   priceValueDisplay.textContent = priceValue + " €";
@@ -140,3 +146,35 @@ priceRangeInput.addEventListener("input", () => {
   // Applica i filtri
   applicaFiltri();
 });
+
+// Listener per la select categoria
+const selectCategoria = document.querySelector(".select-size");
+if (selectCategoria) {
+  selectCategoria.addEventListener("change", () => {
+    const val = selectCategoria.value;
+    // se selezionato "Tutti" o stringa vuota, rimuovi il filtro
+    if (!val || val.trim() === "" || val.includes("Tutti")) {
+      filtriAttivi.categoria = [];
+    } else {
+      // estrai la parte dopo ':' se presente (es. "Categoria: Felpa")
+      const category = val.includes(":") ? val.split(":")[1].trim() : val.trim();
+      filtriAttivi.categoria = [category];
+    }
+    applicaFiltri();
+  });
+
+  // Listener per l'opzione di ordinamento (Data di pubblicazione)
+  const sortingSelect = document.getElementById("sorting");
+  if (sortingSelect) {
+    sortingSelect.addEventListener("change", () => {
+      const v = sortingSelect.value;
+      if (v && v.includes("Data di pubblicazione")) {
+        // imposta ordinamento dal più recente al meno recente
+        filtriAttivi.data_pubblicazione = "desc";
+      } else {
+        filtriAttivi.data_pubblicazione = null;
+      }
+      applicaFiltri();
+    });
+  }
+}

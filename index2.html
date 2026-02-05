@@ -135,11 +135,11 @@
    
     <main>
       <!-- Filtri -->
-        <body>
+        
     <div class="all-components-second-page-filter">
       <div class="section-ordina">
         <label class="select sorting-select">
-          <select name="sorting">
+          <select name="sorting" id="sorting" class="sorting-select">
             <option>Ordina</option>
             <option>I più venduti</option>
             <option>Prezzo dal più basso al più alto</option>
@@ -182,8 +182,13 @@
 
 <div class="filter-panel menu-filter-size" data-panel="size">
   <select name="select-size" class="select-size">
-    <option>Taglie standard</option>
-    <option>Taglie pantaloni</option>
+    <option>Categoria: Tutti</option>
+    <option>Categoria: Felpa</option>
+    <option>Categoria: Jeans</option>
+    <option>Categoria: T-Shirt</option>
+    <option>Categoria: Giacca di pelle</option>
+    
+    
   </select>
   <ul class="list-size">
   <li><input type="checkbox" class="filter-size" value="XS"> XS</li>
@@ -310,7 +315,7 @@
     <input
       type="range"
       min="0"
-      max="500"
+      max="700"
       value="250"
       step="5"
       id="priceRange"
