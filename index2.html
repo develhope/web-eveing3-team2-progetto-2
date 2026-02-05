@@ -16,8 +16,8 @@
   </head>
   <body>
     <div id="top"></div>
-    <header>
-      <!-- Navbar -->
+    <!-- Navbar -->
+    <header class="header">
       <div class="top-bar">
         <div class="container top-content">
           <div class="search-box">
@@ -28,21 +28,23 @@
           <div class="logo">
             <a href="https://www.emp-online.it/">
               <img
-                class="icon-navbar"
-                style="background-color: black"
-                src="https://www.emp-online.it/on/demandware.static/-/Library-Sites-EMPSharedLibrary/default/dw422be3fe/40yrs/EMP_Logo_40Years_ohne_Subline_White.svg"
+                class="icon"
+                src="./components/navbar/img/logo.svg"
               />
             </a>
           </div>
 
+          <button class="hamburger-btn">
+             <span></span>
+             <span></span>
+             <span></span>
+          </button> 
+          
           <div class="user-actions">
-            <span>
-              <a href="https://www.emp-online.it/backstageclub/"> </a
-            ></span>
-            <span><a href="#"></a></span>
+            <span><a href="#"> <img class="club" src="./components/navbar/img/Club.png" /> </a></span>
             <span
               ><a href="#"
-                ><img class="look" style="background-color: black;"
+                ><img class="look" 
                 src=https://www.emp-online.it/on/demandware.static/-/Library-Sites-EMPSharedLibrary/default/dwaaab7858/100109_Logo_60x60_Desk_GtLook_white.png
                 />
               </a></span
@@ -51,6 +53,7 @@
             <span> <a class="heart" href="#"> ❤️ </a> </span>
             <span> <a class="carrello" href="#"> 🛒 0,00 € </a></span>
           </div>
+
         </div>
       </div>
 
@@ -69,7 +72,67 @@
           </ul>
         </div>
       </nav>
+
+        <div class="dropdown-container"> 
+        <!-- Novità -->
+
+         <div class="dropdown-menu">
+          <div class="menu-section">
+            <h3>Abbigliamento</h3>
+            <ul class="abbigliamento">
+              <li><a href="#"> T-Shirt & top </a></li>
+              <li><a href="#"> Longsleeves</a></li>
+              <li><a href="#"> Maglioni </a></li>
+              <li><a href="#"> Giacche </a></li>
+              <li><a href="#"> Scarpe </a></li>
+              <li><a href="#"> Pantaloni </a></li>
+              <li><a href="#"> Felpe con cappuccio </a></li>
+              <li><a href="#"> Sportswear </a></li>
+            </ul>
+          </div>
+
+          <div class="menu-section">
+            <h3>Accessori</h3>
+            <ul class="accessori">
+              <li><a href="#"> Sciarpe & Bendane </a></li>
+              <li><a href="#"> Borse </a></li>
+              <li><a href="#"> Cinture & Fibbie </a></li>
+              <li><a href="#"> Portachiavi </a></li>
+            </ul>
+          </div>
+
+          <div class="menu-section">
+            <h3>Living & Tempo libero</h3>
+            <ul class="living">
+              <li><a href="#"> Statuette </a></li>
+              <li><a href="#"> Articoli decorativi </a></li>
+              <li><a href="#"> Accessori da cucina </a></li>
+              <li><a href="#"> Tazze </a></li>
+            </ul>
+          </div>
+
+          <div class="menu-section">
+            <h3>Highlights</h3>
+            <ul class="highlights">
+              <li><a href="#"> Funko Pop!</a></li>
+              <li>
+                <a href="#"> Stranger Things x Wrangler</a>
+                <img
+                  src="https://www.emp-online.it/on/demandware.static/-/Sites-storefront-emp/default/dw2d1ff525/FW25_WRANGLER_X_STRANGER_THINGS_EMP_CAT_BANNER_1400x400.jpg"
+                />
+              </li>
+              <li>
+                <a href="#"> Metalized </a>
+                <img
+                  src="https://www.emp-online.it/on/demandware.static/-/Sites-storefront-emp/default/dw19a5cdf9/SAM-7284_CAT_New_in_Metal_Design_final.jpg"
+                />
+              </li>
+            </ul>
+          </div>
+        </div> 
+      </div>
     </header>
+   
     <main>
       <!-- Filtri -->
         <body>

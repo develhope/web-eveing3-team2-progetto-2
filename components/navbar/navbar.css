@@ -74,6 +74,10 @@
   position: relative;
 }
 
+.main-menu {
+  display: none;
+}
+
 .main-menu ul {
   list-style: none;
   display: flex;
@@ -92,13 +96,59 @@
   color: #000;
 }
 
+/* Hamburger button styles */
+.hamburger-btn {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  gap: 5px;
+}
+
+.hamburger-btn span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-container::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 10px;
+  pointer-events: none;
+}
+
 .dropdown-menu {
   background-color: #fff;
   position: absolute;
   display: flex;
+  opacity: 0;
+  visibility: hidden;
   border-top: 1px solid grey;
   border-bottom: 1px solid #ddd;
-  box-shadow: #000;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.main-menu:hover ~ .dropdown-container .dropdown-menu,
+.dropdown-container:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
 }
 .menu-section > h3 {
   text-align: left;
@@ -127,4 +177,109 @@
   flex-direction: column;
   width: 300px;
   height: 80px;
+}
+
+/* Media Queries da 768px - Hamburger Menu su Desktop */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .top-content {
+    height: 70px;
+    gap: 20px;
+  }
+
+  .search-box {
+    padding: 8px 15px;
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .logo {
+    max-width: 250px;
+    min-height: 60px;
+  }
+
+  .user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .user-actions span {
+    margin-left: 0;
+    font-size: 15px;
+  }
+
+  /* Mostra il main-menu su tablet e desktop */
+  .main-menu {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .main-menu ul {
+    gap: 30px;
+    padding: 15px;
+  }
+
+  .main-menu a {
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+
+  /* Nascondi l'hamburger button su tablet e desktop */
+  .hamburger-btn {
+    display: none !important;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-section {
+    padding: 20px;
+    width: 25%;
+  }
+
+  .abbigliamento,
+  .accessori,
+  .living,
+  .highlights {
+    width: 100%;
+  }
+
+  .menu-section > h3 {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  .menu-section ul li {
+    margin-bottom: 8px;
+  }
+
+  .menu-section ul li a {
+    font-size: 14px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+
+  .menu-section ul li a:hover {
+    color: #000;
+  }
+
+  .highlights img {
+    width: 100%;
+    height: auto;
+    max-height: 120px;
+  }
 }
