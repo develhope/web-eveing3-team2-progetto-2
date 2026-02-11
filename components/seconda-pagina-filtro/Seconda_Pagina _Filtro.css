@@ -236,6 +236,10 @@ body {
   list-style: none;
   border: 1px solid black;
   border-radius: 2px;
+  display: flex;
+  align-items: center; /* allinea verticalmente checkbox e testo */
+  gap: 6px; /* spazio tra checkbox e scritta */
+  margin-bottom: 6px; /* spazio tra le righe */
 }
 .list-size {
   display: flex;
@@ -382,4 +386,12 @@ body {
   border: 1px solid #000;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.label-filter-border {
+  padding-left: 24px;
+}
+.list-size li:has(.filter-size:checked) {
+  background-color: black;
+  color: white;
 }
