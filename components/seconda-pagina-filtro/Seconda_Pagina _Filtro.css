@@ -225,7 +225,7 @@ body {
 }
 .menu-filter-size {
   width: 330px;
-  height: 220px;
+  height: 240px;
 }
 .select-size {
   width: 100%;
@@ -239,4 +239,147 @@ body {
 }
 .list-size {
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-size li {
+  width: 70px;
+  height: 40px;
+  text-align: center;
+  align-content: center;
+}
+.list-size input {
+  justify-content: center;
+  text-align: center;
+}
+
+.select-size {
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.list-size li:hover {
+  background-color: black;
+  color: white;
+}
+
+.filter-color-icon {
+  border-radius: 100%;
+  text-indent: 0;
+  height: 20px;
+  width: 20px;
+}
+.color-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.color-list li {
+  margin-bottom: 10px;
+}
+
+.color-list input[type="checkbox"] {
+  display: none; /* nascondo la checkbox originale */
+}
+
+.color-list label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: sans-serif;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  border: 2px solid #ccc;
+  transition:
+    transform 0.2s,
+    border-color 0.2s;
+}
+
+.filter-panel[data-panel="color"] input[type="checkbox"] {
+  visibility: hidden;
+}
+/* Pannello colori - nascosto di default */
+.filter-panel[data-panel="color"] {
+  display: none; /* nascosto finché non clicchi il bottone */
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Pannello colori attivo diventa GRID */
+.filter-panel[data-panel="color"].active {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center; /* centra verticalmente le label nella cella */
+  gap: 10px;
+}
+
+/* Label dentro la grid */
+.filter-panel[data-panel="color"] .label-filter {
+  display: flex; /* flex per cerchio + testo */
+  align-items: center; /* centro verticale */
+  justify-content: flex-start; /* testo a fianco del cerchio */
+  gap: 10px; /* spazio tra cerchio e testo */
+  height: 40px; /* altezza uniforme */
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* Cerchi colorati */
+.filter-panel[data-panel="color"] .color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  transition:
+    transform 0.2s,
+    border-color 0.2s;
+  display: inline-block;
+}
+
+/* Checkbox nascosta ma cliccabile */
+.filter-panel[data-panel="color"] input[type="checkbox"] {
+  display: none;
+}
+
+/* Effetto selezione */
+.filter-panel[data-panel="color"]
+  input[type="checkbox"]:checked
+  + .color-circle {
+  transform: scale(1.2);
+  border-color: #000;
+}
+/* Checkbox invisibili ma cliccabili */
+.list-size input[type="checkbox"] {
+  position: absolute; /* la rimuove dalla visualizzazione normale */
+  opacity: 0; /* invisibile */
+  width: 100%; /* occupa tutta l'area del li per essere cliccabile */
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Imposta il li come posizione relativa */
+.list-size li {
+  position: relative; /* serve come riferimento per la checkbox assoluta */
+  width: 70px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px; /* centra il testo verticalmente */
+  border: 1px solid #000;
+  border-radius: 2px;
+  cursor: pointer;
 }
